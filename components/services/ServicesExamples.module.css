@@ -64,7 +64,7 @@
 .card_tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 16px;
 }
 
 .card_tags span {
@@ -81,6 +81,11 @@
 }
 
 @media (max-width: 375px) {
+  .container {
+    gap: 40px;
+    padding: 80px 12px;
+  }
+
   .card_wrapper {
     padding: 0 12px;
     row-gap: 48px;

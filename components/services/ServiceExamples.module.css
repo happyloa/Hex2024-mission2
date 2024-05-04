@@ -21,4 +21,8 @@
     gap: 40px;
     padding: 80px 12px;
   }
+
+  .card_wrapper {
+    row-gap: 48px;
+  }
 }

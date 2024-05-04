@@ -26,13 +26,13 @@ export default function ServicesPricing() {
       <HeadingWithLine headingContent="價格表" />
       <div className={styles.pricing_cards_container}>
         {pricingInfo.map((val, idx) => (
-          <div className={styles.pricing_card} key={idx}>
+          <article className={styles.pricing_card} key={idx}>
             <img src={val.icon} alt={val.service} />
             <h3>{val.service}</h3>
             <hr />
             <h4>{val.price}</h4>
             <span>起</span>
-          </div>
+          </article>
         ))}
       </div>
     </section>

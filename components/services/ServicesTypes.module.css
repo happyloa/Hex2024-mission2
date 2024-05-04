@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 120px 0;
+}
+
+.card_container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true");
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 306px;
+  height: 306px;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card_heading {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 42px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    gap: 40px;
+    padding: 109px 34.5px 80px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card_heading {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}

@@ -53,12 +53,14 @@ export default function ServiceProcess() {
       <HeadingWithLine headingContent="服務流程" light />
       <div className={styles.processes_container}>
         {processesInfo.map((val, idx) => (
-          <article className={styles.process_card} key={idx}>
-            <span className={styles.process_number}>{val.processId}</span>
-            <div className={styles.process_content}>
-              <h3>{val.title}</h3>
-              <p dangerouslySetInnerHTML={{ __html: val.content }} />
-            </div>
+          <div className={styles.card_and_arrow_container} key={idx}>
+            <article className={styles.process_card}>
+              <span className={styles.process_number}>{val.processId}</span>
+              <div className={styles.process_content}>
+                <h3>{val.title}</h3>
+                <p dangerouslySetInnerHTML={{ __html: val.content }} />
+              </div>
+            </article>
             {val.arrow && (
               <img
                 src="/arrow_downward.svg"
@@ -66,7 +68,7 @@ export default function ServiceProcess() {
                 className={styles.arrow_downward}
               />
             )}
-          </article>
+          </div>
         ))}
       </div>
     </section>

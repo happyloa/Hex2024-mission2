@@ -1,0 +1,21 @@
+.heading_wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.heading {
+  color: #3b3b3b;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 12%;
+  line-height: 38.4px;
+  padding: 0 16px;
+}
+
+@media (max-width: 375px) {
+  .heading {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+  }
+}

@@ -19,7 +19,7 @@ export default function HeadingWithLine({
   useEffect(() => {
     // 設計一個函數 handleResize 來根據視窗大小調整圖片來源
     function handleResize() {
-      if (window.innerWidth <= 375) {
+      if (window.innerWidth <= 576) {
         setSrcImage1(
           "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true"
         );

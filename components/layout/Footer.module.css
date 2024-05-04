@@ -77,7 +77,7 @@
     contrast(85%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .footer {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
     justify-content: center;

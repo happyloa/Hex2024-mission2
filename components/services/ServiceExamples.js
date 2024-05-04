@@ -1,6 +1,7 @@
 import styles from "./ServiceExamples.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
+import WorkCard from "../ui/WorkCard";
 
 const examplesInfo = [
   {
@@ -36,20 +37,12 @@ export default function ServiceExamples() {
       <ul className={styles.card_wrapper}>
         {examplesInfo.map((val, idx) => (
           <li key={idx}>
-            <article className={styles.card}>
-              <div className={styles.img_wrapper}>
-                <img src={val.Img} alt={val.title} />
-              </div>
-              <div className={`${styles["card_content"]} ${styles["px-16"]}`}>
-                <h3>{val.title}</h3>
-                <p>{val.description}</p>
-              </div>
-              <div className={`${styles["card_tags"]} ${styles["px-16"]}`}>
-                {val.tags.map((content, tagIndex) => (
-                  <span key={tagIndex}>{content}</span>
-                ))}
-              </div>
-            </article>
+            <WorkCard
+              imgSrc={val.Img}
+              title={val.title}
+              description={val.description}
+              tags={val.tags}
+            />
           </li>
         ))}
       </ul>

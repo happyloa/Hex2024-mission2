@@ -1,4 +1,4 @@
-import styles from "./ServicesTypes.module.css";
+import styles from "./ServiceTypes.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 

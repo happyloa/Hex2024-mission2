@@ -1,4 +1,4 @@
-import styles from "./ServicesExamples.module.css";
+import styles from "./ServiceExamples.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 
@@ -29,7 +29,7 @@ const examplesInfo = [
   },
 ];
 
-export default function ServicesExamples() {
+export default function ServiceExamples() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="客戶案例" />

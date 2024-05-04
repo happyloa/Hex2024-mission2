@@ -1,4 +1,4 @@
-import styles from "./ServicesPricing.module.css";
+import styles from "./ServicePricing.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 
@@ -20,7 +20,7 @@ const pricingInfo = [
   },
 ];
 
-export default function ServicesPricing() {
+export default function ServicePricing() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="價格表" />

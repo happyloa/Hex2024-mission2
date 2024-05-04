@@ -1,0 +1,106 @@
+.footer {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 312px;
+}
+
+.logo_and_paragraph_and_email {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.logo_and_paragraph_and_email img {
+  width: 120px;
+}
+
+.logo_and_paragraph_and_email p {
+  color: #3b3b3b;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.logo_and_paragraph_and_email a {
+  color: #919191;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.logo_and_paragraph_and_email a:hover {
+  color: #3b3b3b;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.links a:first-child {
+  border-radius: 8px;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 8px 24px;
+}
+
+.links a:nth-child(2),
+.links a:nth-child(3) {
+  border: 1px solid #c1c1c1;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  padding: 8px 24px;
+}
+
+.links a:nth-child(2) > img,
+.links a:nth-child(3) > img {
+  filter: invert(33%) sepia(0%) saturate(1%) hue-rotate(223deg) brightness(100%)
+    contrast(85%);
+}
+
+@media (max-width: 375px) {
+  .footer {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+    justify-content: center;
+    padding: 40px 34.5px;
+    row-gap: 40px;
+  }
+
+  .logo_and_paragraph_and_email {
+    align-items: center;
+    width: 100%;
+    padding: 0 22.5px;
+  }
+
+  .logo_and_paragraph_and_email p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .logo_and_paragraph_and_email a {
+    font-size: 16px;
+  }
+
+  .links {
+    width: 100%;
+  }
+}

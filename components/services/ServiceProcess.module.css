@@ -26,6 +26,7 @@
   border-radius: 4px;
   display: flex;
   align-items: center;
+  width: 655px;
   gap: 32px;
   padding: 24px 32px;
 }
@@ -67,6 +68,7 @@
   }
 
   .process_card {
+    width: 100%;
     flex-direction: column;
     gap: 8px;
   }

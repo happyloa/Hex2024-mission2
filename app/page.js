@@ -1,11 +1,9 @@
 import styles from "./page.module.css";
 
-import PortfolioQuote from "@/components/portfolio/PortfolioQuote";
-
 export default function Home() {
   return (
     <>
-      <PortfolioQuote />
+      <h1>頁面建構中</h1>
     </>
   );
 }

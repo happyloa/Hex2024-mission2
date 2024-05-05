@@ -5,6 +5,8 @@ import Link from "next/link";
 
 import styles from "./Header.module.css";
 
+import MobileNav from "./MobileNav";
+
 export default function Header() {
   useEffect(() => {
     // 選取所有連結
@@ -107,6 +109,7 @@ export default function Header() {
             </li>
           </ul>
         </nav>
+        <MobileNav />
       </div>
     </header>
   );

@@ -83,3 +83,21 @@
   border-left: 1px solid #919191;
   border-bottom: 1px solid #919191;
 }
+
+@media (max-width: 576px) {
+  .header {
+    padding: 11.5px 12px;
+  }
+
+  .elements_wrapper {
+    width: 100%;
+  }
+
+  .elements_wrapper img {
+    position: static;
+  }
+
+  .desktop_nav {
+    display: none;
+  }
+}

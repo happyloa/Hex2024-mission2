@@ -33,14 +33,12 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.elements_wrapper}>
         <Link href="/">
-          <h1>
-            <img
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/logo.svg"
-              alt="網站 Logo"
-            />
-          </h1>
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/logo.svg"
+            alt="網站 Logo"
+          />
         </Link>
-        <nav>
+        <nav className={styles.desktop_nav}>
           <ul className={styles.lists_wrapper}>
             <li className={styles.nav_list}>
               <Link href="/" className={styles.nav_link}>

@@ -31,75 +31,85 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav>
-        <ul className={styles.nav_wrapper}>
-          <li className={styles.nav_list}>
-            <Link href="/" className={styles.nav_link}>
-              首頁
-              <div
-                className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
-            </Link>
-          </li>
-          <li className={styles.nav_list}>
-            <Link href="/portfolio" className={styles.nav_link}>
-              作品集
-              <div
-                className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
-            </Link>
-          </li>
-          <li className={styles.nav_list}>
-            <Link href="/services" className={styles.nav_link}>
-              服務項目
-              <div
-                className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
-            </Link>
-          </li>
-          <li className={styles.nav_list}>
-            <Link href="/blog" className={styles.nav_link}>
-              部落格
-              <div
-                className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
-            </Link>
-          </li>
-          <li className={styles.nav_list}>
-            <Link href="#" className={styles.nav_link}>
-              聯絡我
-              <div
-                className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
-              <div
-                className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={styles.elements_wrapper}>
+        <Link href="/">
+          <h1>
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/logo.svg"
+              alt="網站 Logo"
+            />
+          </h1>
+        </Link>
+        <nav>
+          <ul className={styles.lists_wrapper}>
+            <li className={styles.nav_list}>
+              <Link href="/" className={styles.nav_link}>
+                首頁
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
+              </Link>
+            </li>
+            <li className={styles.nav_list}>
+              <Link href="/portfolio" className={styles.nav_link}>
+                作品集
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
+              </Link>
+            </li>
+            <li className={styles.nav_list}>
+              <Link href="/services" className={styles.nav_link}>
+                服務項目
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
+              </Link>
+            </li>
+            <li className={styles.nav_list}>
+              <Link href="/blog" className={styles.nav_link}>
+                部落格
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
+              </Link>
+            </li>
+            <li className={styles.nav_list}>
+              <Link href="#" className={styles.nav_link}>
+                聯絡我
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxUpperRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerRight"]}`}></div>
+                <div
+                  className={`${styles["box"]} ${styles["boxLowerLeft"]}`}></div>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

@@ -1,8 +1,25 @@
 .header {
-  padding: 32px 0;
+  background-color: #ffffffac;
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid #f1f1f1;
+  padding: 28px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
 }
 
-.nav_wrapper {
+.elements_wrapper {
+  width: 1296px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.elements_wrapper img {
+  position: absolute;
+  top: -2px;
+}
+
+.lists_wrapper {
   display: flex;
   justify-content: center;
   gap: 40px;

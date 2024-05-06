@@ -24,11 +24,11 @@ export default function Footer() {
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
           填寫表單
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
           hexschool_demo
         </a>
-        <a href="#">
+        <a href="#" target="_blank">
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
           hexschoolTW
         </a>

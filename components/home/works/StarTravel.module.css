@@ -1,0 +1,160 @@
+.container {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.relative_container {
+  position: relative;
+}
+
+.work_img {
+  position: absolute;
+  top: 80px;
+  left: 312px;
+}
+
+.desktop_work_intro_wrapper {
+  background-color: #ffffff1a;
+  backdrop-filter: blur(5px);
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 80px 40px 56px;
+  position: absolute;
+  top: 200px;
+  right: 312px;
+  width: 526px;
+}
+
+.desktop_work_intro_wrapper a {
+  background-color: #000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  padding: 16px 32px;
+}
+
+.desktop_work_intro_wrapper a img {
+  transition: all 0.3s ease-in-out;
+}
+
+.desktop_work_intro_wrapper a:hover img {
+  transform: translateX(10px) scale(1.2);
+}
+
+.desktop_work_content {
+  border-bottom: 1px solid #f1f1f1;
+  color: #fff;
+  width: 100%;
+  padding: 0 0 40px;
+}
+
+.desktop_work_content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+  margin-bottom: 8px;
+}
+
+.desktop_work_content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.desktop_work_content ul {
+  display: flex;
+  gap: 16px;
+}
+
+.desktop_work_content ul li {
+  background-color: #fff;
+  border-radius: 16px;
+  color: #3b3b3b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 4px 12px;
+}
+
+.mobile_work_intro_wrapper {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .desktop_work_intro_wrapper {
+    display: none;
+  }
+
+  .mobile_work_intro_wrapper {
+    background-color: #fff;
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 48px;
+  }
+
+  .container {
+    background-position: left bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    height: 390px;
+  }
+
+  .work_img {
+    position: static;
+    width: 295px;
+  }
+
+  .mobile_work_intro_wrapper h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .mobile_work_intro_wrapper p {
+    color: #5b5b5b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  .mobile_work_intro_wrapper ul {
+    color: #3b3b3b;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+
+  .mobile_work_intro_wrapper ul li {
+    background-color: #f1f1f1;
+    border-radius: 16px;
+    padding: 4px 12px;
+  }
+
+  .mobile_work_intro_wrapper a {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+  }
+}

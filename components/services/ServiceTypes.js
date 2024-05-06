@@ -1,6 +1,7 @@
 import styles from "./ServiceTypes.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
+import ServiceCards from "../ui/ServiceCards";
 
 const cardContent = [
   {
@@ -25,14 +26,11 @@ export default function ServiceTypes() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="服務項目" />
-      <div className={styles.card_container}>
+      <ul className={styles.card_container}>
         {cardContent.map((val, idx) => (
-          <div className={styles.card} key={idx}>
-            <img src={val.Icon} className={styles.card_icon} />
-            <h3 className={styles.card_heading}>{val.Title}</h3>
-          </div>
+          <ServiceCards Icon={val.Icon} Title={val.Title} key={idx} />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

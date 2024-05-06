@@ -15,11 +15,11 @@ export default function WorkCard({
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className={`${styles["card_tags"]} ${styles["px-16"]}`}>
+      <ul className={`${styles["card_tags"]} ${styles["px-16"]}`}>
         {tags.map((tag, index) => (
-          <span key={index}>{tag}</span>
+          <li key={index}>{tag}</li>
         ))}
-      </div>
+      </ul>
     </article>
   );
 }

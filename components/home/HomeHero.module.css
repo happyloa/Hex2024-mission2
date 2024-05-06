@@ -61,6 +61,11 @@
 .socials img {
   filter: invert(33%) sepia(0%) saturate(1204%) hue-rotate(239deg)
     brightness(98%) contrast(81%);
+  transition: all 0.3s ease-in-out;
+}
+
+.socials img:hover {
+  transform: scale(1.1);
 }
 
 .img_wrapper img {

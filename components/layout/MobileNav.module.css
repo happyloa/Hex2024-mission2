@@ -1,5 +1,39 @@
 .mobile_nav {
+  border: none;
+  background: none;
   display: none;
+}
+
+.mobile_nav img {
+  width: 40px;
+}
+
+.close_btn {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+}
+
+.close_btn img {
+  width: 40px;
+}
+
+.nav_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  gap: 24px;
+}
+
+.nav_list li a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 @media (max-width: 576px) {

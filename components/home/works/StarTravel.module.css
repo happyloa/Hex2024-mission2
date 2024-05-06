@@ -3,9 +3,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
-}
-
-.relative_container {
   position: relative;
 }
 

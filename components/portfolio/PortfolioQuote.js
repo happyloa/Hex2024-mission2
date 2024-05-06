@@ -9,20 +9,20 @@ export default function PortfolioQuote() {
           alt="引用裝飾1"
           className={styles.quoteIcon1}
         />
-        <h2>
+        <p>
           讓使用者在觀賞與使用的旅程中，發現
           <span>
             設計的價值
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
           </span>
-        </h2>
-        <h2>
+        </p>
+        <p>
           而我在設計與開發的過程中，看見
           <span>
             自己的價值
             <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
           </span>
-        </h2>
+        </p>
         <img
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
           alt="引用裝飾2"

@@ -64,16 +64,6 @@
 }
 
 @media (max-width: 576px) {
-  .elements_wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-
-  .elements_wrapper img {
-    position: static;
-  }
-
   .desktop_nav {
     display: none;
   }

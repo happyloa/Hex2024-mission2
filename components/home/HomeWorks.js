@@ -3,6 +3,7 @@ import styles from "./HomeWorks.module.css";
 import HeadingWithLine from "../ui/HeadingWithLine";
 
 import StarTravel from "./works/StarTravel";
+import FintechAPP from "./works/FintechAPP";
 
 export default function HomeWorks() {
   return (
@@ -10,6 +11,7 @@ export default function HomeWorks() {
       <HeadingWithLine headingContent="作品介紹" />
       <main>
         <StarTravel />
+        <FintechAPP />
       </main>
     </section>
   );

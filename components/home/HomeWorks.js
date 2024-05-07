@@ -4,6 +4,7 @@ import HeadingWithLine from "../ui/HeadingWithLine";
 
 import StarTravel from "./works/StarTravel";
 import FintechAPP from "./works/FintechAPP";
+import AestheticClinic from "./works/FintechAPP";
 
 export default function HomeWorks() {
   return (
@@ -12,6 +13,7 @@ export default function HomeWorks() {
       <main>
         <StarTravel />
         <FintechAPP />
+        <AestheticClinic />
       </main>
     </section>
   );

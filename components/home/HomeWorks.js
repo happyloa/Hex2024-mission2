@@ -4,7 +4,7 @@ import HeadingWithLine from "../ui/HeadingWithLine";
 
 import StarTravel from "./works/StarTravel";
 import FintechAPP from "./works/FintechAPP";
-import AestheticClinic from "./works/FintechAPP";
+import AestheticClinic from "./works/AestheticClinic";
 
 export default function HomeWorks() {
   return (

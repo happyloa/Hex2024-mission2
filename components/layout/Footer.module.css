@@ -71,12 +71,6 @@
   padding: 8px 24px;
 }
 
-.links a:nth-child(2) > img,
-.links a:nth-child(3) > img {
-  filter: invert(33%) sepia(0%) saturate(1%) hue-rotate(223deg) brightness(100%)
-    contrast(85%);
-}
-
 @media (max-width: 576px) {
   .footer {
     background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");

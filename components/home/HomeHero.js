@@ -10,12 +10,12 @@ export default function HomeHero() {
             具有 10 年經驗的&nbsp;
             <span>
               資深 UI 設計師
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
+              <img src="/image/deco/mark.webp" />
             </span>
             &nbsp;&nbsp;兼&nbsp;&nbsp;
             <span>
               前端工程師
-              <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
+              <img src="/image/deco/mark.webp" />
             </span>
             <br />
             技術雙修並行，熱衷於優化使用者的網頁體驗

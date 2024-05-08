@@ -5,7 +5,7 @@ export default function PortfolioQuote() {
     <section className={styles.container}>
       <blockquote className={styles.blockquote}>
         <img
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-left.png?raw=true"
+          src="/image/deco/quote-left.webp"
           alt="引用裝飾1"
           className={styles.quoteIcon1}
         />
@@ -13,18 +13,18 @@ export default function PortfolioQuote() {
           讓使用者在觀賞與使用的旅程中，發現
           <span>
             設計的價值
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
+            <img src="/image/deco/mark.webp" />
           </span>
         </p>
         <p>
           而我在設計與開發的過程中，看見
           <span>
             自己的價值
-            <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true" />
+            <img src="/image/deco/mark.webp" />
           </span>
         </p>
         <img
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/quote-right.png?raw=true"
+          src="/image/deco/quote-right.webp"
           alt="引用裝飾2"
           className={styles.quoteIcon2}
         />

@@ -22,6 +22,12 @@ export default function MobileNav() {
         />
       </button>
       <Modal
+        overlayClassName={{
+          base: styles.nav_overlay,
+          afterOpen: styles.nav_overlayAfterOpen,
+          beforeClose: styles.nav_overlayBeforeClose,
+        }}
+        closeTimeoutMS={300}
         isOpen={isOpen}
         onRequestClose={toggleModal}
         ariaHideApp={false}
@@ -33,9 +39,6 @@ export default function MobileNav() {
             bottom: "auto",
             padding: "96px 0 40px",
             backgroundColor: "#fff",
-          },
-          overlay: {
-            backgroundColor: "rgba(0, 0, 0, 0.7)",
           },
         }}>
         <nav>

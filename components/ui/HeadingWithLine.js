@@ -10,29 +10,21 @@ export default function HeadingWithLine({
 }) {
   // 使用 useState 設定左右裝飾圖片的預設路徑
   const [srcImage1, setSrcImage1] = useState(
-    "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true"
+    "/image/deco/title-deco-left-lg.webp"
   );
   const [srcImage2, setSrcImage2] = useState(
-    "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true"
+    "/image/deco/title-deco-right-lg.webp"
   );
 
   useEffect(() => {
     // 設計一個函數 handleResize 來根據視窗大小調整圖片來源
     function handleResize() {
       if (window.innerWidth <= 576) {
-        setSrcImage1(
-          "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-sm.png?raw=true"
-        );
-        setSrcImage2(
-          "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-sm.png?raw=true"
-        );
+        setSrcImage1("/image/deco/title-deco-left-sm.webp");
+        setSrcImage2("/image/deco/title-deco-right-sm.webp");
       } else {
-        setSrcImage1(
-          "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-left-lg.png?raw=true"
-        );
-        setSrcImage2(
-          "https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/title-deco-right-lg.png?raw=true"
-        );
+        setSrcImage1("/image/deco/title-deco-left-lg.webp");
+        setSrcImage2("/image/deco/title-deco-right-lg.webp");
       }
     }
 

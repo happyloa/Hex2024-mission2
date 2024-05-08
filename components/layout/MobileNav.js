@@ -17,7 +17,7 @@ export default function MobileNav() {
     <>
       <button className={styles.mobile_nav} onClick={toggleModal}>
         <img
-          src={isOpen ? "/close.svg" : "/menu.svg"}
+          src={isOpen ? "/image/close.svg" : "/image/menu.svg"}
           alt={isOpen ? "Close Menu" : "Open Menu"}
         />
       </button>

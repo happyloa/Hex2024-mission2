@@ -1,7 +1,7 @@
 import styles from "./ServiceCards.module.css";
 
 export default function ServiceCards({
-  Icon = `https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/service-item-visual.svg`,
+  Icon = `/image/services/service-item-visual.svg`,
   Title = "服務項目",
 }) {
   return (

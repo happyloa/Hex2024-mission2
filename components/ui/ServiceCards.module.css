@@ -1,5 +1,5 @@
 .card {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true");
+  background-image: url("/image/services/service-item-bg.webp");
   background-size: cover;
   border-radius: 16px;
   display: flex;

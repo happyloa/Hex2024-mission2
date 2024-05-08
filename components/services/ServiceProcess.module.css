@@ -1,5 +1,5 @@
 .container {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/process-bg.png?raw=true");
+  background-image: url("/image/services/process-bg.webp");
   background-size: cover;
   display: flex;
   flex-direction: column;

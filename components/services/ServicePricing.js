@@ -4,17 +4,17 @@ import HeadingWithLine from "../ui/HeadingWithLine";
 
 const pricingInfo = [
   {
-    icon: `https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/price-item-visual.svg`,
+    icon: `/image/services/price-item-visual.svg`,
     service: "平面設計",
     price: "6,000",
   },
   {
-    icon: `https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/price-item-ui.svg`,
+    icon: `/image/services/price-item-ui.svg`,
     service: "UI 設計",
     price: "15,000",
   },
   {
-    icon: `https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/price-item-front-end.svg`,
+    icon: `/image/services/price-item-front-end.svg`,
     service: "前端開發",
     price: "22,000",
   },

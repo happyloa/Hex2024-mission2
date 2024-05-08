@@ -63,7 +63,7 @@ export default function ServiceProcess() {
             </article>
             {val.arrow && (
               <img
-                src="/image/arrow_downward.svg"
+                src="/image/icon/arrow_downward.svg"
                 alt="Arrow Downward"
                 className={styles.arrow_downward}
               />

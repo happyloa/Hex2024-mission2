@@ -1,5 +1,5 @@
 .container {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true");
+  background-image: url("/image/home/homepage-work2-lg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -74,7 +74,7 @@
   }
 
   .container {
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-sm.png?raw=true");
+    background-image: url("/image/home/homepage-work2-sm.webp");
     background-attachment: scroll;
     display: flex;
     flex-direction: column;

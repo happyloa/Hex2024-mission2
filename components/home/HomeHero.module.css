@@ -69,7 +69,7 @@
 }
 
 .img_wrapper img {
-  content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-lg.png?raw=true");
+  content: url("/image/home/hero-lg.webp");
 }
 
 @media (max-width: 576px) {
@@ -79,7 +79,7 @@
   }
 
   .img_wrapper img {
-    content: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/hero-sm.png?raw=true");
+    content: url("/image/home/hero-sm.webp");
   }
 
   .text_and_socials_wrapper {

@@ -8,7 +8,7 @@ export default function AestheticClinic() {
       <div className={styles.container}>
         <div className={styles.overlay}></div>
         <img
-          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3.png?raw=true"
+          src="/image/home/homepage-work3.webp"
           alt="醫美診所官網"
           className={styles.work_img}
         />

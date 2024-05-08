@@ -1,5 +1,5 @@
 .container {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true");
+  background-image: url("/image/home/homepage-services-bg.webp");
   display: flex;
   flex-direction: column;
   align-items: center;

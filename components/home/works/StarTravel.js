@@ -6,6 +6,7 @@ export default function StarTravel() {
   return (
     <article>
       <div className={styles.container}>
+        <div className={styles.overlay}></div>
         <img
           src="https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1.png?raw=true"
           alt="星際旅行訂票平台"

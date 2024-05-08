@@ -4,6 +4,14 @@
   align-items: center;
 }
 
+.srcImage1 {
+  content: url("/image/deco/title-deco-left-lg.webp");
+}
+
+.srcImage2 {
+  content: url("/image/deco/title-deco-right-lg.webp");
+}
+
 .heading {
   color: #3b3b3b;
   font-size: 32px;
@@ -14,6 +22,14 @@
 }
 
 @media (max-width: 576px) {
+  .srcImage1 {
+    content: url("/image/deco/title-deco-left-sm.webp");
+  }
+
+  .srcImage2 {
+    content: url("/image/deco/title-deco-right-sm.webp");
+  }
+
   .heading {
     font-size: 24px;
     font-weight: 700;

@@ -21,15 +21,24 @@ export default function Footer() {
       </div>
       <div className={styles.links}>
         <a href="#">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg"
+            alt="表單 icon"
+          />
           填寫表單
         </a>
         <a href="#" target="_blank">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/instagram.svg"
+            alt="Instagram 連結"
+          />
           hexschool_demo
         </a>
         <a href="#" target="_blank">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg" />
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/facebook.svg"
+            alt="Facebook 連結"
+          />
           hexschoolTW
         </a>
       </div>

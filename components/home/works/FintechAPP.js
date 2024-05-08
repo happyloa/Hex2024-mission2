@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import styles from "./FintechAPP.module.css";
+
+import CTABtn from "@/components/ui/CTABtn";
 
 export default function FintechAPP() {
   return (
@@ -17,10 +17,7 @@ export default function FintechAPP() {
                 <li>React</li>
               </ul>
             </div>
-            <Link href="/portfolio">
-              完整介紹
-              <img src="/arrow_forward.svg" />
-            </Link>
+            <CTABtn href="/portfolio" content="完整介紹" />
           </div>
         </div>
       </div>
@@ -32,10 +29,7 @@ export default function FintechAPP() {
           <li>iOS</li>
           <li>React</li>
         </ul>
-        <Link href="/portfolio">
-          完整介紹
-          <img src="/arrow_forward.svg" />
-        </Link>
+        <CTABtn href="/portfolio" content="完整介紹" />
       </div>
     </article>
   );

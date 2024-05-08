@@ -1,6 +1,6 @@
-import Link from "next/link";
-
 import styles from "./AestheticClinic.module.css";
+
+import CTABtn from "@/components/ui/CTABtn";
 
 export default function AestheticClinic() {
   return (
@@ -22,10 +22,7 @@ export default function AestheticClinic() {
               <li>ＷordPress</li>
             </ul>
           </div>
-          <Link href="/portfolio">
-            完整介紹
-            <img src="/arrow_forward.svg" />
-          </Link>
+          <CTABtn href="/portfolio" content="完整介紹" />
         </div>
       </div>
       <div className={styles.mobile_work_intro_wrapper}>
@@ -36,10 +33,7 @@ export default function AestheticClinic() {
           <li>響應式設計</li>
           <li>ＷordPress</li>
         </ul>
-        <Link href="/portfolio">
-          完整介紹
-          <img src="/arrow_forward.svg" />
-        </Link>
+        <CTABtn href="/portfolio" content="完整介紹" />
       </div>
     </article>
   );

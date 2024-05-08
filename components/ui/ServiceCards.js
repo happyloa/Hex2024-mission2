@@ -6,8 +6,8 @@ export default function ServiceCards({
 }) {
   return (
     <li className={styles.card}>
-      <img src={Icon} className={styles.card_icon} />
-      <h3 className={styles.card_heading}>{Title}</h3>
+      <img src={Icon} className={styles.card_icon} alt={Title + "icon"} />
+      <h3 className={styles.heading}>{Title}</h3>
     </li>
   );
 }

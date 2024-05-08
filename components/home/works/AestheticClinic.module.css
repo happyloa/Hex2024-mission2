@@ -2,6 +2,7 @@
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   height: 800px;
   position: relative;
 }
@@ -93,6 +94,7 @@
 
   .container {
     background-position: center bottom;
+    background-attachment: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;

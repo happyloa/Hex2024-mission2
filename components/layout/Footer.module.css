@@ -1,5 +1,5 @@
 .footer {
-  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  background-image: url("/image/footer/footer-bg-lg.webp");
   background-size: cover;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +73,7 @@
 
 @media (max-width: 576px) {
   .footer {
-    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-sm.png?raw=true");
+    background-image: url("/image/footer/footer-bg-sm.webp");
     justify-content: center;
     padding: 40px 34.5px;
     row-gap: 40px;

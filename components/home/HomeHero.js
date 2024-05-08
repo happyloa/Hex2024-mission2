@@ -10,12 +10,12 @@ export default function HomeHero() {
             具有 10 年經驗的&nbsp;
             <span>
               資深 UI 設計師
-              <img src="/image/deco/mark.webp" />
+              <img src="/image/deco/mark.webp" alt="標題裝飾" />
             </span>
             &nbsp;&nbsp;兼&nbsp;&nbsp;
             <span>
               前端工程師
-              <img src="/image/deco/mark.webp" />
+              <img src="/image/deco/mark.webp" alt="標題裝飾" />
             </span>
             <br />
             技術雙修並行，熱衷於優化使用者的網頁體驗

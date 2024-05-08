@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import styles from "./StarTravel.module.css";
 
 import CTABtn from "@/components/ui/CTABtn";

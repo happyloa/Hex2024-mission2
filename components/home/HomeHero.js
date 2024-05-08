@@ -28,7 +28,7 @@ export default function HomeHero() {
           <li>
             <a href="#" target="_blank">
               <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/instagram.svg"
                 alt="instagram 連結"
               />
             </a>
@@ -36,7 +36,7 @@ export default function HomeHero() {
           <li>
             <a href="#" target="_blank">
               <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/d796f511bed88b5468b1c02b9dc1f17048b1448f/2024%20web-camp/list.svg"
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/a0deba953fc5322a513e717e7c24b25fa3d946f8/2024%20web-camp/facebook.svg"
                 alt="facebook 連結"
               />
             </a>

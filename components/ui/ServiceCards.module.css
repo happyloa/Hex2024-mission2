@@ -16,7 +16,7 @@
   transform: translateY(-10px);
 }
 
-.card_heading {
+.heading {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
@@ -28,7 +28,7 @@
     width: 100%;
   }
 
-  .card_heading {
+  .heading {
     font-size: 24px;
     line-height: 36px;
   }

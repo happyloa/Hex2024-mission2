@@ -6,7 +6,7 @@ const processesInfo = [
   {
     processStep: "1",
     title: "初步接洽",
-    content: `透過表單或其他社群軟體與我聯絡根據難易度與複雜度，後續可能需要電話/線上討論`,
+    content: `透過表單或其他社群軟體與我聯絡<br/>根據難易度與複雜度，後續可能需要電話/線上討論`,
     arrow: true,
   },
   {
@@ -18,7 +18,7 @@ const processesInfo = [
   {
     processStep: "3",
     title: "委託簽約",
-    content: `合約雙方用印後，即正式開始合作可提供發票或勞務報酬單，須支付 20% 訂金`,
+    content: `合約雙方用印後，即正式開始合作<br/>可提供發票或勞務報酬單，須支付 20% 訂金`,
     arrow: true,
   },
   {
@@ -58,7 +58,7 @@ export default function ServiceProcess() {
               <span className={styles.process_number}>{val.processStep}</span>
               <div className={styles.process_content}>
                 <h3>{val.title}</h3>
-                <p>{val.content}</p>
+                <p dangerouslySetInnerHTML={{ __html: val.content }} />
               </div>
             </article>
             {val.arrow && (

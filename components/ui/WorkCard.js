@@ -34,7 +34,12 @@ export default function WorkCard({
           ))}
         </ul>
       </article>
-      <WorkModal isOpen={isOpen} toggleModal={toggleModal} />
+      <WorkModal
+        isOpen={isOpen}
+        toggleModal={toggleModal}
+        title={title}
+        description={description}
+      />
     </>
   );
 }

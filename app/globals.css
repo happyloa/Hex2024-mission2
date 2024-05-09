@@ -1,5 +1,3 @@
-/* 引入思源黑體 API */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 /* 引入 Tourney 字體 API */
 @import url("https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap");
 
@@ -7,13 +5,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  font-family: "Noto Sans", sans-serif;
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
 }

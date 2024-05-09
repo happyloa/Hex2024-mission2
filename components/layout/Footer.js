@@ -17,10 +17,10 @@ export default function Footer() {
         <a href="mailto:service@hexschool.com">service@hexschool.com</a>
       </div>
       <div className={styles.links}>
-        <a href="#">
+        <Link href="/contact">
           <img src="/image/icon/list.svg" alt="表單 icon" />
           填寫表單
-        </a>
+        </Link>
         <a href="#" target="_blank">
           <img src="/image/icon/instagram.svg" alt="Instagram 連結" />
           hexschool_demo

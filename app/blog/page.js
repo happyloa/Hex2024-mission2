@@ -1,7 +1,5 @@
+import BlogHeading from "@/components/blog/BlogHeading";
+
 export default function Blog() {
-  return (
-    <>
-      <h1>部落格頁面建構中</h1>
-    </>
-  );
+  return <BlogHeading />;
 }

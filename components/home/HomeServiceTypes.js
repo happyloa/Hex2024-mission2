@@ -34,7 +34,7 @@ export default function HomeServiceTypes() {
       </ul>
       <div className={styles.content_wrapper}>
         <h3>想要合作或瞭解更多？</h3>
-        <CTABtn href="/services" content="詳細內容與合作流程" />
+        <CTABtn href="/services#process" content="詳細內容與合作流程" />
       </div>
     </section>
   );

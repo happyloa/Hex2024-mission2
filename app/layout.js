@@ -1,6 +1,13 @@
 import "./globals.css";
 import "./scrollBar.css";
 
+import { Noto_Sans } from "next/font/google";
+
+const notoSans = Noto_Sans({
+  subsets: ["latin"],
+  display: "swap",
+});
+
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -11,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh-Hant">
+    <html lang="zh-Hant" className={notoSans.className}>
       <body>
         <Header />
         {children}

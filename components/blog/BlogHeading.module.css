@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 120px 0 80px;
+}
+
+.container p {
+  color: #919191;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    gap: 16px;
+    padding: 40px 0;
+  }
+}

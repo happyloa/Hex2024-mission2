@@ -49,7 +49,7 @@ const processesInfo = [
 
 export default function ServiceProcess() {
   return (
-    <section className={styles.container}>
+    <section className={styles.container} id="process">
       <HeadingWithLine headingContent="服務流程" light />
       <div className={styles.processes_container}>
         {processesInfo.map((val, idx) => (

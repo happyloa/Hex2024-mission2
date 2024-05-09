@@ -56,7 +56,7 @@ export default function MobileNav() {
               <Link href="/blog">部落格</Link>
             </li>
             <li>
-              <Link href="/contact">聯絡我們</Link>
+              <Link href="/contact">聯絡我</Link>
             </li>
           </ul>
         </nav>

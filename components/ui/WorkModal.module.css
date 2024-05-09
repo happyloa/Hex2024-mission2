@@ -94,6 +94,7 @@
 }
 
 .main_content {
+  background-color: #fafafa;
   display: flex;
   flex-direction: column;
   gap: 56px;

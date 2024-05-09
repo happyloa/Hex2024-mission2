@@ -87,4 +87,8 @@
   .process_content p {
     text-align: justify;
   }
+
+  .process_content p br {
+    display: none;
+  }
 }

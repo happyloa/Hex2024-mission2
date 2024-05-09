@@ -77,7 +77,7 @@ export default function DesktopNav() {
           </Link>
         </li>
         <li className={styles.nav_list}>
-          <Link href="#" className={styles.nav_link}>
+          <Link href="/contact" className={styles.nav_link}>
             聯絡我
             <div className={`${styles["box"]} ${styles["boxUpperLeft"]}`}></div>
             <div

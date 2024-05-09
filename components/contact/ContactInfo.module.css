@@ -59,11 +59,13 @@
 }
 
 .form input {
+  border: 1px solid #5b5b5b;
   padding: 8px 16px;
   width: 100%;
 }
 
 .form textarea {
+  border: 1px solid #5b5b5b;
   padding: 8px 16px;
   width: 100%;
 }
@@ -78,7 +80,6 @@
   line-height: 30px;
   padding: 16px 32px;
   transition: all 0.3s ease-in-out;
-  width: 100%;
 }
 
 .form button:hover {
@@ -124,5 +125,6 @@
     font-size: 16px;
     line-height: 24px;
     padding: 8px 16px;
+    width: 100%;
   }
 }

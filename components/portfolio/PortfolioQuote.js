@@ -6,7 +6,7 @@ export default function PortfolioQuote() {
       <blockquote className={styles.blockquote}>
         <img
           src="/image/deco/quote-left.webp"
-          alt="引用裝飾1"
+          alt="引言裝飾1"
           className={styles.quoteIcon1}
         />
         <p>
@@ -25,7 +25,7 @@ export default function PortfolioQuote() {
         </p>
         <img
           src="/image/deco/quote-right.webp"
-          alt="引用裝飾2"
+          alt="引言裝飾2"
           className={styles.quoteIcon2}
         />
       </blockquote>

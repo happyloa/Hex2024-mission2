@@ -12,7 +12,7 @@
 }
 
 .work_modal_overlay {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.6);
   position: fixed;
   top: 0;
   left: 0;
@@ -57,7 +57,8 @@
 
 .intro {
   display: flex;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 64px;
 }
 
 .intro p {
@@ -66,6 +67,14 @@
   font-weight: 400;
   line-height: 24px;
   width: 532px;
+}
+
+.intro br {
+  display: none;
+}
+
+.intro br.desktop_br {
+  display: block;
 }
 
 .intro div {
@@ -122,4 +131,68 @@
 }
 
 @media (max-width: 576px) {
+  .work_modal {
+    position: fixed;
+    top: 90px;
+    left: 50%;
+    right: 12px;
+    bottom: 40px;
+    transform: translate(-50%);
+    width: 351px;
+    padding: 88px 0 40px;
+  }
+
+  .text_wrapper {
+    gap: 24px;
+    padding: 0 32px 24px;
+  }
+
+  .title h3 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .intro {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .intro br {
+    display: block;
+  }
+
+  .intro div {
+    border-left: none;
+    border-top: 1px solid #c1c1c1;
+    gap: 24px;
+    padding: 24px 0 0;
+  }
+
+  .intro div span {
+    text-align: center;
+  }
+
+  .main_content {
+    padding: 40px 16px 0;
+  }
+
+  .main_content figure img {
+    border-radius: 8px;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .main_content figure h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+
+  .close_icon {
+    right: 32px;
+  }
 }

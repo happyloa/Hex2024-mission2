@@ -1,7 +1,7 @@
 import styles from "./WorkCard.module.css";
 
 export default function WorkCard({
-  imgSrc = `https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/work-image4.png?raw=true`,
+  imgSrc = `/image/work/work-image1.webp`,
   title = "請輸入作品標題",
   description = "請輸入作品描述",
   tags = ["作品標籤"],

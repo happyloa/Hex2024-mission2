@@ -28,12 +28,20 @@ export default function WorkModal({ isOpen, toggleModal, title, description }) {
         <div className={styles.intro}>
           <p>
             STAR TRAVEL 為 KK 公司宇宙旅行的購票網站。
-            <br />
+            <br className={styles.desktop_br} />
             主要從地球出發，目的地包含月球、火星、水星、木星；未來太空轉運站建置完畢，將再擴增目的地土星和金星。
           </p>
           <div>
-            <span>設計原則：宇宙旅行、深色背景、強烈視覺效果</span>
-            <span>開發方式：Bootstrap、Javascript、RWD</span>
+            <span>
+              設計原則：
+              <br />
+              宇宙旅行、深色背景、強烈視覺效果
+            </span>
+            <span>
+              開發方式：
+              <br />
+              Bootstrap、Javascript、RWD
+            </span>
           </div>
         </div>
       </section>

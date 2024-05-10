@@ -1,9 +1,9 @@
 import "./globals.css";
 import "./scrollBar.css";
 
-import { Noto_Sans } from "next/font/google";
+import { Noto_Sans_TC } from "next/font/google";
 
-const notoSans = Noto_Sans({
+const notoSans = Noto_Sans_TC({
   subsets: ["latin"],
   display: "swap",
 });

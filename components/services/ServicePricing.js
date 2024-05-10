@@ -1,6 +1,7 @@
 import styles from "./ServicePricing.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
+import PricingCard from "../ui/PricingCard";
 
 const pricingInfo = [
   {
@@ -24,17 +25,16 @@ export default function ServicePricing() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="價格表" />
-      <div className={styles.pricing_cards_container}>
+      <ul className={styles.pricing_cards_container}>
         {pricingInfo.map((val, idx) => (
-          <article className={styles.pricing_card} key={idx}>
-            <img src={val.icon} alt={val.service} />
-            <h3>{val.service}</h3>
-            <hr />
-            <h4>{val.price}</h4>
-            <span>起</span>
-          </article>
+          <PricingCard
+            icon={val.icon}
+            service={val.service}
+            price={val.price}
+            key={idx}
+          />
         ))}
-      </div>
+      </ul>
     </section>
   );
 }

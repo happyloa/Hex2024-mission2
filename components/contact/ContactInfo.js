@@ -5,7 +5,7 @@ import HeadingWithLine from "../ui/HeadingWithLine";
 export default function ContactInfo() {
   return (
     <section className={styles.container}>
-      <HeadingWithLine headingContent="歡迎來信聯絡我" />
+      <HeadingWithLine headingContent="歡迎來信聯絡" />
       <div className={styles.info_and_form_wrapper}>
         <div className={styles.info}>
           <h3>讓我們建立聯繫</h3>

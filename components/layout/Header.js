@@ -2,8 +2,8 @@ import Link from "next/link";
 
 import styles from "./Header.module.css";
 
-import DesktopNav from "./DesktopNav";
-import MobileNav from "./MobileNav";
+import DesktopNav from "./Nav/DesktopNav";
+import MobileNav from "./Nav/MobileNav";
 
 export default function Header() {
   return (

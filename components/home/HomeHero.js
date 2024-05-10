@@ -37,7 +37,7 @@ export default function HomeHero() {
           </li>
           <li>
             <a href="#" target="_blank">
-              <img src="/image/icon/list.svg" alt="YouTube 連結" />
+              <img src="/image/icon/youtube.svg" alt="YouTube 連結" />
             </a>
           </li>
         </ul>

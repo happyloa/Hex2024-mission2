@@ -58,7 +58,7 @@
 }
 
 .lists_wrapper li:hover .border {
-  opacity: 1;
+  opacity: 1 !important;
 }
 
 @media (max-width: 576px) {

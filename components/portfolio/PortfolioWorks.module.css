@@ -29,6 +29,14 @@
   transition: all 0.3s ease-in-out;
 }
 
+.pagination li:first-child {
+  background-color: #1e1e1e;
+}
+
+.pagination li:first-child a {
+  color: #fff;
+}
+
 .pagination li:hover {
   background-color: #1e1e1e;
 }

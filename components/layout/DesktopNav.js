@@ -1,56 +1,44 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import styles from "./DesktopNav.module.css";
 
 export default function DesktopNav() {
+  const pathname = usePathname();
+
+  const navItems = [
+    { href: "/", label: "首頁" },
+    { href: "/portfolio", label: "作品集" },
+    { href: "/services", label: "服務項目" },
+    { href: "/blog", label: "部落格" },
+    { href: "/contact", label: "聯絡我" },
+  ];
+
   return (
     <nav className={styles.desktop_nav}>
       <ul className={styles.lists_wrapper}>
-        <li>
-          <Link href="/">首頁</Link>
-          <span className={`${styles["border"]} ${styles["top-left"]}`}></span>
-          <span className={`${styles["border"]} ${styles["top-right"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-left"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-right"]}`}></span>
-        </li>
-        <li>
-          <Link href="/portfolio">作品集</Link>
-          <span className={`${styles["border"]} ${styles["top-left"]}`}></span>
-          <span className={`${styles["border"]} ${styles["top-right"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-left"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-right"]}`}></span>
-        </li>
-        <li>
-          <Link href="/services">服務項目</Link>
-          <span className={`${styles["border"]} ${styles["top-left"]}`}></span>
-          <span className={`${styles["border"]} ${styles["top-right"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-left"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-right"]}`}></span>
-        </li>
-        <li>
-          <Link href="/blog">部落格</Link>
-          <span className={`${styles["border"]} ${styles["top-left"]}`}></span>
-          <span className={`${styles["border"]} ${styles["top-right"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-left"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-right"]}`}></span>
-        </li>
-        <li>
-          <Link href="/contact">聯絡我</Link>
-          <span className={`${styles["border"]} ${styles["top-left"]}`}></span>
-          <span className={`${styles["border"]} ${styles["top-right"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-left"]}`}></span>
-          <span
-            className={`${styles["border"]} ${styles["bottom-right"]}`}></span>
-        </li>
+        {navItems.map((item) => {
+          const isActive = pathname === item.href;
+          return (
+            <li key={item.href}>
+              <Link href={item.href}>{item.label}</Link>
+              <span
+                className={`${styles["border"]} ${styles["top-left"]}`}
+                style={{ opacity: isActive ? 1 : 0 }}></span>
+              <span
+                className={`${styles["border"]} ${styles["top-right"]}`}
+                style={{ opacity: isActive ? 1 : 0 }}></span>
+              <span
+                className={`${styles["border"]} ${styles["bottom-left"]}`}
+                style={{ opacity: isActive ? 1 : 0 }}></span>
+              <span
+                className={`${styles["border"]} ${styles["bottom-right"]}`}
+                style={{ opacity: isActive ? 1 : 0 }}></span>
+            </li>
+          );
+        })}
       </ul>
     </nav>
   );

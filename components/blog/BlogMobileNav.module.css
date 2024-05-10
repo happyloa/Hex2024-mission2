@@ -1,0 +1,38 @@
+.container {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .container {
+    background-color: #fafafa;
+    display: block;
+    overflow-x: auto;
+    padding: 20px 12px;
+    scrollbar-width: none;
+  }
+
+  .container ul {
+    display: flex;
+    gap: 32px;
+    width: 521px;
+  }
+
+  .container ul li {
+    padding: 0 0 4px;
+  }
+
+  .container ul li:first-child {
+    border-bottom: 1px solid #1e1e1e;
+  }
+
+  .container ul li:hover {
+    border-bottom: 1px solid #1e1e1e;
+  }
+
+  .container ul li a {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}

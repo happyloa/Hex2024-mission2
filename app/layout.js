@@ -3,7 +3,7 @@ import "./scrollBar.css";
 
 import { Noto_Sans_TC } from "next/font/google";
 
-const notoSans = Noto_Sans_TC({
+const notoSansTC = Noto_Sans_TC({
   subsets: ["latin"],
   display: "swap",
 });
@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh-Hant" className={notoSans.className}>
+    <html lang="zh-Hant" className={notoSansTC.className}>
       <body>
         <Header />
         {children}

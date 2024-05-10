@@ -10,7 +10,7 @@ export default function ContactInfo() {
         <div className={styles.info}>
           <h3>讓我們建立聯繫</h3>
           <a
-            href="mailto:service@hexschool.com?subject=您好，我想與您合作。?body=如果您看到這封 Email，請回覆我，期待與您合作，謝謝！"
+            href="mailto:service@hexschool.com?subject=您好，我想與您合作。&body=如果您看到這封 Email，請回覆我，期待與您合作，謝謝！"
             className={styles.email}>
             Email：service@hexschool.com
           </a>

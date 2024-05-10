@@ -14,7 +14,9 @@ export default function Footer() {
           <br />
           歡迎填寫表單，或直接與我聯絡！
         </p>
-        <a href="mailto:service@hexschool.com">service@hexschool.com</a>
+        <a href="mailto:service@hexschool.com?subject=您好，我想與您合作。&body=如果您看到這封 Email，請回覆我，期待與您合作，謝謝！">
+          service@hexschool.com
+        </a>
       </div>
       <div className={styles.links}>
         <Link href="/contact">

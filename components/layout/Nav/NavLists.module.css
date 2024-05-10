@@ -1,15 +1,9 @@
-.lists_wrapper {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-.lists_wrapper li {
+.list {
   position: relative;
   padding: 4px 8px;
 }
 
-.lists_wrapper li a {
+.list a {
   color: #000000;
   font-size: 16px;
   font-weight: 400;
@@ -17,8 +11,8 @@
   transition: all 0.3s ease-in-out;
 }
 
-.lists_wrapper li a:hover {
-  font-weight: 600;
+.list a:hover {
+  font-weight: 600 !important;
 }
 
 .border {
@@ -27,6 +21,10 @@
   height: 8px;
   opacity: 0;
   transition: all 0.3s ease-in-out;
+}
+
+.list:hover .border {
+  opacity: 1 !important;
 }
 
 .top-left {
@@ -55,14 +53,4 @@
   right: 0;
   border-bottom: 1px solid #919191;
   border-right: 1px solid #919191;
-}
-
-.lists_wrapper li:hover .border {
-  opacity: 1 !important;
-}
-
-@media (max-width: 576px) {
-  .desktop_nav {
-    display: none;
-  }
 }

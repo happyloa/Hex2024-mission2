@@ -1,0 +1,42 @@
+.mobile_nav {
+  border: none;
+  background: none;
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .mobile_nav {
+    display: block;
+  }
+
+  .mobile_nav img {
+    width: 40px;
+  }
+
+  .lists_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .nav_overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 300ms ease-in-out;
+    z-index: 998;
+  }
+
+  .nav_overlayAfterOpen {
+    opacity: 1;
+  }
+
+  .nav_overlayBeforeClose {
+    opacity: 0;
+  }
+}

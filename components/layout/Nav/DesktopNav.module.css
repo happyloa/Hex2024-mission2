@@ -1,0 +1,11 @@
+.lists_wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+@media (max-width: 576px) {
+  .desktop_nav {
+    display: none;
+  }
+}

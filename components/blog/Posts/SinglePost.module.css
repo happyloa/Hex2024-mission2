@@ -54,6 +54,26 @@
   line-height: 30px;
 }
 
+.images_wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+
+.images_wrapper figure img {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.images_wrapper figure figcaption {
+  color: #5b5b5b;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
 @media (max-width: 576px) {
   .meta_wrapper {
     margin-bottom: 24px;
@@ -91,5 +111,10 @@
   .content_wrapper h2 {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .images_wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 32px;
   }
 }

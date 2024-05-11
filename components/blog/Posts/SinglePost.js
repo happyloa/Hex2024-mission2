@@ -32,11 +32,24 @@ export default function SinglePost() {
       <section className={styles.content_wrapper}>
         <p>{post.postMeta.summary}</p>
         {/* 使用 map 方法來遍歷 postContent 裡的每個元素 */}
-        {post.postContent.map((content, index) => (
-          <div key={index}>
-            <h2>{content.title}</h2>
-            <p>{content.content}</p>
-          </div>
+        {post.postContent.map((content, idx) => (
+          <>
+            <div key={idx}>
+              <h2>{content.title}</h2>
+              <p>{content.content}</p>
+            </div>
+            {/* 在第二個內容後插入所有圖片 */}
+            {idx === 1 && post.postImages ? (
+              <div className={styles.images_wrapper}>
+                {post.postImages.map((image, imgIdx) => (
+                  <figure key={imgIdx}>
+                    <img src={image.url} alt={image.caption} />
+                    <figcaption>{image.caption}</figcaption>
+                  </figure>
+                ))}
+              </div>
+            ) : null}
+          </>
         ))}
       </section>
     </>

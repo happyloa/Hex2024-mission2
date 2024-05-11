@@ -31,10 +31,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   },
   {
@@ -69,10 +81,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   },
   {
@@ -107,10 +131,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   },
   {
@@ -145,10 +181,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   },
   {
@@ -183,10 +231,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   },
   {
@@ -221,10 +281,22 @@
       }
     ],
     "postImages": [
-      "/image/blog/article/vision-pro.webp",
-      "/image/blog/article/oculus-rift.webp",
-      "/image/blog/article/htc-vive.webp",
-      "/image/blog/article/playstation-vr.webp"
+      {
+        "url": "/image/blog/article-image/vision-pro.webp",
+        "caption": "Vision Pro"
+      },
+      {
+        "url": "/image/blog/article-image/oculus-rift.webp",
+        "caption": "Oculus Rift"
+      },
+      {
+        "url": "/image/blog/article-image/htc-vive.webp",
+        "caption": "HTC Vive"
+      },
+      {
+        "url": "/image/blog/article-image/playstation-vr.webp",
+        "caption": "PlayStation VR"
+      }
     ]
   }
 ]

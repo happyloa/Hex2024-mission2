@@ -5,6 +5,18 @@
   padding: 0 0 120px;
 }
 
-@media (max-width:576px) {
-    
+.container main {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding: 40px 34.5px 80px;
+  }
+
+  .container main {
+    gap: 40px;
+  }
 }

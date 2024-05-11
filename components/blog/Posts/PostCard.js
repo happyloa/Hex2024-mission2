@@ -8,7 +8,7 @@ export default function PostCard() {
   return (
     <>
       {posts.map((post, idx) => (
-        <Link href="#" key={idx}>
+        <Link href={post.postLink} key={idx}>
           <article className={styles.post_card}>
             <div className={styles.img_wrapper}>
               <img src={post.postMeta.postThumb} alt="Article Thumbnail" />

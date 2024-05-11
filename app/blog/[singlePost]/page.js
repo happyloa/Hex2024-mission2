@@ -1,3 +1,15 @@
-export default function SinglePost() {
-  return <h1>這是獨立文章頁面</h1>;
+import styles from "./SinglePostPage.module.css";
+
+import SinglePost from "@/components/blog/Posts/SinglePost";
+import BlogSideBar from "@/components/blog/BlogSideBar";
+
+export default function SinglePostPage() {
+  return (
+    <section className={styles.container}>
+      <article>
+        <SinglePost />
+      </article>
+      <BlogSideBar />
+    </section>
+  );
 }

@@ -9,6 +9,8 @@
     overflow-x: auto;
     padding: 20px 12px;
     scrollbar-width: none;
+    position: sticky;
+    top: 69px;
   }
 
   .container ul {

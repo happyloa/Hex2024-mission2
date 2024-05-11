@@ -10,6 +10,10 @@
 }
 
 @media (max-width: 576px) {
+  .container {
+    padding: 32px 12px 40px;
+  }
+
   .container article {
     width: 100%;
   }

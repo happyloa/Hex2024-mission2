@@ -8,10 +8,10 @@ export default function PostCard() {
   return (
     <>
       {posts.map((post, idx) => (
-        <Link href={post.postLink} key={idx}>
+        <Link href={"/blog" + post.postLink} key={idx}>
           <article className={styles.post_card}>
             <div className={styles.img_wrapper}>
-              <img src={post.postMeta.postThumb} alt="Article Thumbnail" />
+              <img src={post.postMeta.postThumb} alt={post.postMeta.title} />
             </div>
             <div className={styles.content_wrapper}>
               <div className={styles.time_and_category}>

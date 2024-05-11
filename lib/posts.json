@@ -1,6 +1,5 @@
 [
   {
-    "postId": "1",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image1.webp",
@@ -12,7 +11,6 @@
     "postContent": {}
   },
   {
-    "postId": "2",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image2.webp",
@@ -24,7 +22,6 @@
     "postContent": {}
   },
   {
-    "postId": "3",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image3.webp",
@@ -36,7 +33,6 @@
     "postContent": {}
   },
   {
-    "postId": "4",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image4.webp",
@@ -63,7 +59,6 @@
     }
   },
   {
-    "postId": "5",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image5.webp",
@@ -75,7 +70,6 @@
     "postContent": {}
   },
   {
-    "postId": "6",
     "postLink": "/blog/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image6.webp",

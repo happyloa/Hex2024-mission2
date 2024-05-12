@@ -8,6 +8,7 @@
   font-size: var(--xs);
   font-weight: var(--bolder);
   line-height: 30px;
+  text-wrap: nowrap;
   padding: 16px 32px;
 }
 

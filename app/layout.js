@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./scrollBar.css";
+import "./variables.css";
 
 import { Noto_Sans_TC } from "next/font/google";
 

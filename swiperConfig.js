@@ -1,4 +1,3 @@
-// Swiper 設定
 const swiperConfig = {
   autoplay: true,
   loop: true,

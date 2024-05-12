@@ -28,8 +28,8 @@
 
 .nav ul li a {
   color: var(--primary600);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
   transition: all 0.3s ease-in-out;
 }

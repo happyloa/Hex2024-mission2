@@ -22,8 +22,8 @@
 
 .content_wrapper h3 {
   color: var(--primary700);
-  font-size: 28px;
-  font-weight: 600;
+  font-size: var(--m);
+  font-weight: var(--bold);
   line-height: 33.6px;
 }
 
@@ -40,8 +40,8 @@
   }
 
   .content_wrapper h3 {
-    font-size: 20px;
-    font-weight: 700;
+    font-size: var(--xs);
+    font-weight: var(--bolder);
     line-height: 24px;
   }
 }

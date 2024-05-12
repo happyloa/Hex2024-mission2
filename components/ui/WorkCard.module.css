@@ -29,16 +29,16 @@
 
 .card_content h3 {
   color: var(--primary700);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 33.6px;
   margin-bottom: 8px;
 }
 
 .card_content p {
   color: var(--primary500);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -71,7 +71,7 @@
   }
 
   .card_content h3 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 24px;
   }
 

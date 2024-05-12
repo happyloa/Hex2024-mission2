@@ -22,8 +22,8 @@
 
 .info h3 {
   color: var(--primary700);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 33.6px;
   margin-bottom: 24px;
 }
@@ -31,8 +31,8 @@
 .info a {
   color: var(--primary500);
   display: block;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 24px;
   transition: all 0.3s ease-in-out;
 }
@@ -47,8 +47,8 @@
 
 .info p {
   color: var(--primary700);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
 }
 
@@ -66,8 +66,8 @@
 .form input {
   border: 1px solid var(--primary600);
   border-radius: 5px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   padding: 16px 24px;
   width: 100%;
@@ -76,8 +76,8 @@
 .form textarea {
   border: 1px solid var(--primary600);
   border-radius: 5px;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   padding: 16px 24px;
   width: 100%;
@@ -88,8 +88,8 @@
   border-radius: 5px;
   color: var(--white);
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--xs);
+  font-weight: var(--bolder);
   line-height: 30px;
   padding: 16px 24px;
   transition: all 0.3s ease-in-out;
@@ -121,7 +121,7 @@
   }
 
   .info h3 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 24px;
     margin-bottom: 16px;
   }
@@ -129,7 +129,7 @@
   .info p {
     color: var(--primary500);
     text-align: center;
-    font-size: 16px;
+    font-size: var(--xxs);
     line-height: 24px;
   }
 
@@ -139,7 +139,7 @@
 
   .info a {
     text-align: center;
-    font-size: 16px;
+    font-size: var(--xxs);
   }
 
   .info a:nth-child(3) {
@@ -151,7 +151,7 @@
   }
 
   .form button {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 24px;
     padding: 16px;
     width: 100%;

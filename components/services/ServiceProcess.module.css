@@ -35,22 +35,22 @@
   color: var(--primary500);
   font-family: "Tourney", sans-serif;
   font-size: 72px;
-  font-weight: 400;
+  font-weight: var(--normal);
   line-height: 86.4px;
 }
 
 .process_content h3 {
   color: var(--white);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 33.6px;
   margin-bottom: 8px;
 }
 
 .process_content p {
   color: var(--primary300);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
 }
 
@@ -74,13 +74,13 @@
   }
 
   .process_number {
-    font-size: 48px;
+    font-size: var(--xxl);
     line-height: 57.6px;
   }
 
   .process_content h3 {
     text-align: center;
-    font-size: 24px;
+    font-size: var(--s);
     line-height: 28.8px;
   }
 

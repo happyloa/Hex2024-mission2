@@ -20,15 +20,15 @@
 
 .logo_and_paragraph_and_email p {
   color: var(--primary700);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
 }
 
 .logo_and_paragraph_and_email a {
   color: var(--primary500);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 24px;
   transition: all 0.3s ease-in-out;
 }
@@ -50,8 +50,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--xs);
+  font-weight: var(--bolder);
   line-height: 30px;
   padding: 8px 24px;
 }
@@ -65,8 +65,8 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
   padding: 8px 24px;
 }
@@ -86,12 +86,12 @@
   }
 
   .logo_and_paragraph_and_email p {
-    font-size: 16px;
+    font-size: var(--xxs);
     line-height: 24px;
   }
 
   .logo_and_paragraph_and_email a {
-    font-size: 16px;
+    font-size: var(--xxs);
   }
 
   .links {

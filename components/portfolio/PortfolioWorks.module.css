@@ -43,8 +43,8 @@
 
 .pagination li a {
   color: var(--primary700);
-  font-size: 24px;
-  font-weight: 400;
+  font-size: var(--s);
+  font-weight: var(--normal);
   line-height: 36px;
   transition: all 0.3s ease-in-out;
 }

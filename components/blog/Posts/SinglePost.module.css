@@ -5,23 +5,23 @@
 
 .meta_wrapper h1 {
   text-align: center;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: var(--l);
+  font-weight: var(--bolder);
   line-height: 38.4px;
   margin-bottom: 24px;
 }
 
 .meta_wrapper h2 {
   text-align: center;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: var(--s);
+  font-weight: var(--normal);
   line-height: 28.8px;
 }
 
 .breadcrumb {
   color: var(--primary500);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   margin-bottom: 40px;
 }
@@ -42,15 +42,15 @@
 }
 
 .content_wrapper h2 {
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--s);
+  font-weight: var(--bolder);
   line-height: 28.8px;
   margin-bottom: 16px;
 }
 
 .content_wrapper p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
 }
 
@@ -68,8 +68,8 @@
 
 .images_wrapper figure figcaption {
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   text-align: center;
 }
@@ -80,13 +80,13 @@
   }
 
   .meta_wrapper h1 {
-    font-size: 24px;
+    font-size: var(--s);
     line-height: 28.8px;
     margin-bottom: 16px;
   }
 
   .meta_wrapper h2 {
-    font-size: 16px;
+    font-size: var(--xxs);
     line-height: 19.2px;
   }
 
@@ -109,7 +109,7 @@
   }
 
   .content_wrapper h2 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 24px;
   }
 

@@ -37,8 +37,8 @@
 
 .time_and_category time {
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -61,14 +61,14 @@
 }
 
 .content_wrapper h3 {
-  font-size: 20px;
-  font-weight: 600;
+  font-size: var(--xs);
+  font-weight: var(--bold);
   line-height: 24px;
 }
 
 .content_wrapper p {
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 

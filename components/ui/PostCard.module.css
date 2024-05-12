@@ -17,8 +17,8 @@
 
 .content_wrapper h3 {
   color: var(--primary700);
-  font-size: 20px;
-  font-weight: 700;
+  font-size: var(--xs);
+  font-weight: var(--bolder);
   line-height: 24px;
   margin-bottom: 16px;
 }
@@ -42,7 +42,7 @@
 
 .time_and_category time {
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }

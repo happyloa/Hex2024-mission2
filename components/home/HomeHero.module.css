@@ -18,16 +18,16 @@
 
 .content h1 {
   color: var(--primary700);
-  font-size: 40px;
-  font-weight: 600;
+  font-size: var(--xl);
+  font-weight: var(--bold);
   line-height: 48px;
   margin-bottom: 24px;
 }
 
 .content p {
   color: var(--primary600);
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--xs);
+  font-weight: var(--normal);
   line-height: 30px;
   margin-bottom: 16px;
 }
@@ -47,8 +47,8 @@
 
 .content .skills {
   color: var(--primary400);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -90,8 +90,8 @@
   }
 
   .content h1 {
-    font-size: 32px;
-    font-weight: 700;
+    font-size: var(--l);
+    font-weight: var(--bolder);
     line-height: 38.4px;
   }
 

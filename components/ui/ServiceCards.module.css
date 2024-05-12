@@ -18,8 +18,8 @@
 
 .heading {
   color: var(--white);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 42px;
 }
 
@@ -29,7 +29,7 @@
   }
 
   .heading {
-    font-size: 24px;
+    font-size: var(--s);
     line-height: 36px;
   }
 }

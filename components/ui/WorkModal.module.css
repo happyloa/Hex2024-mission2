@@ -41,8 +41,8 @@
 .title h3 {
   color: var(--primary700);
   text-align: center;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: var(--m);
+  font-weight: var(--bolder);
   line-height: 33.6px;
   margin-bottom: 8px;
 }
@@ -50,8 +50,8 @@
 .title p {
   color: var(--primary500);
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -63,8 +63,8 @@
 
 .intro p {
   color: var(--primary800);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   width: 532px;
 }
@@ -88,8 +88,8 @@
 
 .intro div span {
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -109,8 +109,8 @@
 .main_content figure h4 {
   color: var(--primary800);
   text-align: center;
-  font-size: 24px;
-  font-weight: 700;
+  font-size: var(--s);
+  font-weight: var(--bolder);
   line-height: 28.8px;
   margin-bottom: 16px;
 }
@@ -118,8 +118,8 @@
 .main_content figure figcaption {
   color: var(--primary600);
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -149,7 +149,7 @@
   }
 
   .title h3 {
-    font-size: 28px;
+    font-size: var(--m);
     line-height: 42px;
   }
 
@@ -188,7 +188,7 @@
   }
 
   .main_content figure h4 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 24px;
     margin-bottom: 8px;
   }

@@ -22,8 +22,8 @@
 
 .blockquote p {
   color: var(--primary800);
-  font-size: 24px;
-  font-weight: 400;
+  font-size: var(--s);
+  font-weight: var(--normal);
   line-height: 28.8px;
   text-align: center;
 }
@@ -66,8 +66,8 @@
 
 .content_wrapper h3 {
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -79,8 +79,8 @@
 .content_wrapper p {
   color: var(--primary700);
   text-align: center;
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
 }
 
@@ -101,7 +101,7 @@
   }
 
   .blockquote p {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 30px;
   }
 

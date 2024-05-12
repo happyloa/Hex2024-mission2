@@ -14,8 +14,8 @@
 
 .pricing_card h3 {
   color: var(--primary600);
-  font-size: 28px;
-  font-weight: 600;
+  font-size: var(--m);
+  font-weight: var(--bold);
   line-height: 42px;
 }
 
@@ -27,8 +27,8 @@
 
 .pricing_card h4 {
   color: var(--primary800);
-  font-size: 32px;
-  font-weight: 700;
+  font-size: var(--l);
+  font-weight: var(--bolder);
   line-height: 48px;
   margin-right: 8px;
 }
@@ -36,8 +36,8 @@
 .pricing_card span {
   align-self: end;
   color: var(--primary600);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: var(--xxs);
+  font-weight: var(--normal);
   line-height: 24px;
   margin-bottom: 8px;
 }
@@ -54,7 +54,7 @@
   }
 
   .pricing_card h3 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 30px;
   }
 
@@ -64,7 +64,7 @@
   }
 
   .pricing_card h4 {
-    font-size: 20px;
+    font-size: var(--xs);
     line-height: 30px;
     margin-right: 4px;
   }

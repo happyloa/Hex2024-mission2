@@ -1,8 +1,8 @@
-import styles from "./PostSliderCard.module.css";
+import styles from "./PostCard.module.css";
 
 import Link from "next/link";
 
-export default function PostSliderCard({ post }) {
+export default function PostCard({ post }) {
   return (
     <Link href={"/blog" + post.postLink}>
       <article>

@@ -7,7 +7,7 @@ import { register } from "swiper/element/bundle";
 
 register();
 
-import PostSliderCard from "@/components/ui/PostSliderCard";
+import PostCard from "@/components/ui/PostCard";
 
 import posts from "@/lib/posts.json";
 
@@ -21,7 +21,7 @@ export default function PostSlider() {
       <swiper-container ref={swiperElRef} {...swiperConfig}>
         {posts.map((post, idx) => (
           <swiper-slide key={idx}>
-            <PostSliderCard post={post} />
+            <PostCard post={post} />
           </swiper-slide>
         ))}
       </swiper-container>

@@ -10,13 +10,17 @@ register();
 
 import PostSliderCard from "@/components/ui/PostSliderCard";
 
+import posts from "@/lib/posts.json";
+
 export default function PostSlider() {
   const swiperElRef = useRef(null);
 
   return (
     <>
       <swiper-container ref={swiperElRef} {...swiperConfig}>
-        <PostSliderCard />
+        {posts.map((post, idx) => (
+          <PostSliderCard post={post} key={idx} />
+        ))}
       </swiper-container>
     </>
   );

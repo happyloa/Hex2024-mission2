@@ -110,7 +110,7 @@
   }
 
   .blockquote p span {
-    display: block;
+    display: inline-block;
   }
 
   .blockquote .quoteIcon2 {

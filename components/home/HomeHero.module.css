@@ -96,7 +96,7 @@
   }
 
   .content p span {
-    display: block;
+    display: inline-block;
   }
 
   .socials {

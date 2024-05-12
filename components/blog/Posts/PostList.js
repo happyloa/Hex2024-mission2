@@ -1,15 +1,15 @@
-import styles from "./PostCard.module.css";
+import styles from "./PostList.module.css";
 
 import Link from "next/link";
 
 import posts from "@/lib/posts.json";
 
-export default function PostCard() {
+export default function PostList() {
   return (
     <>
       {posts.map((post, idx) => (
         <Link href={"/blog" + post.postLink} key={idx}>
-          <article className={styles.post_card}>
+          <article className={styles.post_list}>
             <div className={styles.img_wrapper}>
               <img src={post.postMeta.postThumb} alt={post.postMeta.title} />
             </div>

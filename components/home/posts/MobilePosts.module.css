@@ -1,0 +1,11 @@
+.mobile_posts {
+  display: none;
+}
+
+@media (max-width: 576px) {
+  .mobile_posts {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
+}

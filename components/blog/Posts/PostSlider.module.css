@@ -1,3 +1,12 @@
-.swiper_container .bullets {
-  display: none;
+/* 客製化導覽點點 */
+.swiper-pagination-bullet {
+  width: 12px; /* 設定點點的寬度 */
+  height: 12px; /* 設定點點的高度 */
+  background-color: #fff; /* 設定點點的背景色 */
+  opacity: 0.6; /* 設定點點的透明度 */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007bff; /* 設定活動點點的背景色 */
+  opacity: 1; /* 設定活動點點的不透明度 */
 }

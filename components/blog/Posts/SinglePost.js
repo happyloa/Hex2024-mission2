@@ -51,6 +51,7 @@ export default function SinglePost() {
             ) : null}
           </>
         ))}
+        <span className={styles.author}>Noel 主筆</span>
       </section>
     </>
   );

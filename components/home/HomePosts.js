@@ -1,7 +1,7 @@
 import styles from "./HomePosts.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
-import PostSlider from "../blog/Posts/PostSlider";
+import PostSlider from "./posts/PostSlider";
 import CTABtn from "../ui/CTABtn";
 
 export default function HomePosts() {

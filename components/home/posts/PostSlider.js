@@ -20,8 +20,8 @@ export default function PostSlider() {
     <div className={styles.swiper_container}>
       <swiper-container ref={swiperElRef} {...swiperConfig}>
         {posts.map((post, idx) => (
-          <swiper-slide>
-            <PostSliderCard post={post} key={idx} />
+          <swiper-slide key={idx}>
+            <PostSliderCard post={post} />
           </swiper-slide>
         ))}
       </swiper-container>

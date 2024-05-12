@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![](https://i.imgur.com/2T7dOi7.png)
 
-## Getting Started
+# 六角學院 2024 體驗營 | 切版任務作業二 - 個人品牌網站
 
-First, run the development server:
+此專案為六角學院 2024 軟體工程師體驗營的切版任務作業二之成品
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- [線上部署連結](https://hex2024.worksbyaaron.com/)
+- [設計稿](https://www.figma.com/file/rX9YdVutqj9jF0kw72SAKi/2024ver.-%E9%AB%94%E9%A9%97%E7%87%9F%E8%A8%AD%E8%A8%88%E7%A8%BF?type=design&node-id=2221-22843&mode=design&t=eHIm1tvOJekYWyMt-0)
+
+## 使用技術
+
+[Next.js 14](https://nextjs.org/)（React 加強版）
+
+## 開發環境設置
+
+建議使用 [VSCode](https://code.visualstudio.com/) 搭配 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+
+## 快速開始
+
+**專案設置（Project setup）**
+
+將專案複製到本地端
+
+```sh
+$ git clone https://github.com/happyloa/Hex2024-mission2.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+套件安裝
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```sh
+$ cd 2024-mission2
+$ npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**執行專案（Start the server）**
 
-## Learn More
+```sh
+$ npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+在瀏覽器上輸入
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+http://localhost:3000/
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+即可在本地端預覽專案
 
-## Deploy on Vercel
+## 靜態檔案
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+位於 `public/image` 及 `lib`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+結構說明
+
+```
+public
+└── image                  存放圖片
+    ├── blog               部落格文章封面圖片
+        └── article-image  文章內穿插的圖片
+    ├── deco               裝飾用圖片
+    ├── footer             頁尾用圖片
+    ├── home               首頁用到的圖片
+    ├── icon               在網站上使用的各式 icon
+    ├── services           服務項目圖片
+    ├── work               與作品有關的圖片。
+        └── modal          點擊作品後彈出的 Modal 內的圖片
+    └── logo.svg           網站 Logo
+```
+
+```
+lib
+└── posts.json             所有文章資料
+```
+
+## 使用的套件 & 工具
+
+- [react-modal](https://www.npmjs.com/package/react-modal)
+- [swiper](https://swiperjs.com/)
+- [TinyPNG](https://tinypng.com/)
+- [ChatGPT 4](https://openai.com/)

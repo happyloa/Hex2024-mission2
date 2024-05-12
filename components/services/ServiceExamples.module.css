@@ -1,5 +1,5 @@
 .container {
-  background-color: #fafafa;
+  background-color: var(--primary100);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -17,7 +17,7 @@
 }
 
 .content h1 {
-  color: #3b3b3b;
+  color: var(--primary700);
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -25,7 +25,7 @@
 }
 
 .content p {
-  color: #5b5b5b;
+  color: var(--primary600);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -46,7 +46,7 @@
 }
 
 .content .skills {
-  color: #c1c1c1;
+  color: var(--primary400);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;

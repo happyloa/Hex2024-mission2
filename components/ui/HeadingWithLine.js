@@ -6,7 +6,7 @@ export default function HeadingWithLine({
 }) {
   // 根據 light 屬性決定文字顏色
   const headingStyle = {
-    color: light ? "#FFF" : "#3b3b3b", // 如果 light 為 true 則文字顏色為白色，否則為原始顏色
+    color: light ? "var(--white)" : "var(--primary700)", // 如果 light 為 true 則文字顏色為白色，否則為原始顏色
   };
 
   return (

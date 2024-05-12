@@ -1,5 +1,5 @@
 .categories_container {
-  background-color: #fafafa;
+  background-color: var(--primary100);
   border-radius: 8px;
   width: 306px;
   padding: 80px;
@@ -23,11 +23,11 @@
 }
 
 .nav ul li:hover {
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid var(--primary800);
 }
 
 .nav ul li a {
-  color: #5b5b5b;
+  color: var(--primary600);
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
@@ -35,15 +35,15 @@
 }
 
 .nav ul li a:hover {
-  color: #1e1e1e;
+  color: var(--primary800);
 }
 
 .nav ul li:first-child {
-  border-bottom: 2px solid #1e1e1e;
+  border-bottom: 2px solid var(--primary800);
 }
 
 .nav ul li:first-child a {
-  color: #1e1e1e;
+  color: var(--primary800);
 }
 
 @media (max-width: 576px) {

@@ -4,7 +4,7 @@
 }
 
 .list a {
-  color: #000000;
+  color: var(--black);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -30,27 +30,27 @@
 .top-left {
   top: 0;
   left: 0;
-  border-top: 1px solid #919191;
-  border-left: 1px solid #919191;
+  border-top: 1px solid var(--primary500);
+  border-left: 1px solid var(--primary500);
 }
 
 .top-right {
   top: 0;
   right: 0;
-  border-top: 1px solid #919191;
-  border-right: 1px solid #919191;
+  border-top: 1px solid var(--primary500);
+  border-right: 1px solid var(--primary500);
 }
 
 .bottom-left {
   bottom: 0;
   left: 0;
-  border-bottom: 1px solid #919191;
-  border-left: 1px solid #919191;
+  border-bottom: 1px solid var(--primary500);
+  border-left: 1px solid var(--primary500);
 }
 
 .bottom-right {
   bottom: 0;
   right: 0;
-  border-bottom: 1px solid #919191;
-  border-right: 1px solid #919191;
+  border-bottom: 1px solid var(--primary500);
+  border-right: 1px solid var(--primary500);
 }

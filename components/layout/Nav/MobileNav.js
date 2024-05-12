@@ -39,7 +39,7 @@ export default function MobileNav() {
             right: "0",
             bottom: "auto",
             padding: "96px 0 40px",
-            backgroundColor: "#fff",
+            backgroundColor: "var(--white)",
           },
         }}>
         <nav>

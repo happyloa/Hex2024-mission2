@@ -4,7 +4,7 @@
 
 @media (max-width: 576px) {
   .container {
-    background-color: #fafafa;
+    background-color: var(--primary100);
     display: block;
     overflow-x: auto;
     padding: 20px 12px;
@@ -24,15 +24,15 @@
   }
 
   .container ul li:first-child {
-    border-bottom: 1px solid #1e1e1e;
+    border-bottom: 1px solid var(--primary800);
   }
 
   .container ul li:hover {
-    border-bottom: 1px solid #1e1e1e;
+    border-bottom: 1px solid var(--primary800);
   }
 
   .container ul li a {
-    color: #1e1e1e;
+    color: var(--primary800);
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;

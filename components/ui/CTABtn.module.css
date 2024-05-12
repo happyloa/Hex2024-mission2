@@ -1,4 +1,5 @@
 .link {
+  align-self: center;
   background-color: #000;
   border-radius: 5px;
   display: flex;

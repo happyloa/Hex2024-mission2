@@ -17,12 +17,14 @@ export default function PostSlider() {
   const swiperElRef = useRef(null);
 
   return (
-    <>
+    <div className={styles.swiper_container}>
       <swiper-container ref={swiperElRef} {...swiperConfig}>
         {posts.map((post, idx) => (
-          <PostSliderCard post={post} key={idx} />
+          <swiper-slide>
+            <PostSliderCard post={post} key={idx} />
+          </swiper-slide>
         ))}
       </swiper-container>
-    </>
+    </div>
   );
 }

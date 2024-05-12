@@ -1,5 +1,5 @@
 :root {
-  /* 顏色變數 */
+  /* 顏色 */
   --white: #ffffff;
   --primary100: #fafafa;
   --primary200: #f1f1f1;
@@ -10,4 +10,16 @@
   --primary700: #3b3b3b;
   --primary800: #1e1e1e;
   --black: #000000;
+  /* 文字大小 */
+  --xxs: 16px;
+  --xs: 20px;
+  --s: 24px;
+  --m: 28px;
+  --l: 32px;
+  --xl: 40px;
+  --xxl: 48px;
+  /* 文字粗細度 */
+  --normal: 400;
+  --bold: 600;
+  --bolder: 700;
 }

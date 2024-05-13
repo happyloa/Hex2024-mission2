@@ -42,7 +42,9 @@ export default function HomeHero() {
           </li>
         </ul>
       </div>
-      <img alt="Hero 圖片" className={styles.hero_image} />
+      <div className={styles.img_wrapper}>
+        <img alt="Hero 圖片" />
+      </div>
     </section>
   );
 }

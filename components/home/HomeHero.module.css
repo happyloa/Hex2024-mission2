@@ -1,5 +1,7 @@
 .container {
   display: flex;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .text_and_socials_wrapper {
@@ -7,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   margin-left: auto;
-  padding: 0 24px 0 0;
+  padding: 0 24px 0;
 }
 
 .content {
@@ -65,21 +67,24 @@
   transform: scale(1.1);
 }
 
-.hero_image {
+.img_wrapper img {
   content: url("/image/home/hero-lg.webp");
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .container {
     flex-direction: column-reverse;
- 
   }
 
-  .hero_image {
+  .img_wrapper img {
     content: url("/image/home/hero-sm.webp");
   }
 
   .text_and_socials_wrapper {
+    margin: 0;
     padding: 40px 53.5px;
   }
 

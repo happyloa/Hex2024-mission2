@@ -1,8 +1,8 @@
 .work_modal {
   position: fixed;
   top: 120px;
-  left: 422px;
-  right: 422px;
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 40px;
   width: 1076px;
   background-color: var(--white);

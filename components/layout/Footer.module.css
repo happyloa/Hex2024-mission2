@@ -1,11 +1,18 @@
 .footer {
   background-image: url("/image/footer/footer-bg-lg.webp");
   background-size: cover;
+  padding: 80px 12px;
+}
+
+.elements_wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 312px;
+  gap: 40px;
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
 }
 
 .logo_and_paragraph_and_email {
@@ -76,7 +83,6 @@
     background-image: url("/image/footer/footer-bg-sm.webp");
     justify-content: center;
     padding: 40px 34.5px;
-    row-gap: 40px;
   }
 
   .logo_and_paragraph_and_email {
@@ -86,6 +92,7 @@
   }
 
   .logo_and_paragraph_and_email p {
+    text-align: center;
     font-size: var(--xxs);
     line-height: 24px;
   }

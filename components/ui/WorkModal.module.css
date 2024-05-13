@@ -139,10 +139,9 @@
   right: 40px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .work_modal {
     top: 90px;
-    max-width: 351px;
     padding: 88px 0 40px;
   }
 

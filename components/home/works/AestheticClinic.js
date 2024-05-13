@@ -6,12 +6,9 @@ export default function AestheticClinic() {
   return (
     <article>
       <div className={styles.container}>
-        <div className={styles.overlay}></div>
-        <img
-          src="/image/home/homepage-work3.webp"
-          alt="醫美診所官網"
-          className={styles.work_img}
-        />
+        <div className={styles.work_img}>
+          <img src="/image/home/homepage-work3.webp" alt="醫美診所官網" />
+        </div>
         <div className={styles.desktop_work_intro_wrapper}>
           <div className={styles.desktop_work_content}>
             <h3>醫美診所官網</h3>
@@ -24,6 +21,7 @@ export default function AestheticClinic() {
           </div>
           <CTABtn href="/portfolio" content="完整介紹" />
         </div>
+        <div className={styles.overlay}></div>
       </div>
       <div className={styles.mobile_work_intro_wrapper}>
         <h3>醫美診所官網</h3>

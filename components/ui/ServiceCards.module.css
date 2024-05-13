@@ -23,7 +23,7 @@
   line-height: 42px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .card {
     width: 100%;
   }

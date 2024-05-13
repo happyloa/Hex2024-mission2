@@ -32,12 +32,13 @@
   margin-bottom: 16px;
 }
 
-.content p span {
+.content p strong {
+  font-weight: var(--normal);
   position: relative;
   z-index: 0;
 }
 
-.content p span img {
+.content p strong img {
   position: absolute;
   z-index: -1;
   left: 50%;
@@ -95,7 +96,7 @@
     line-height: 38.4px;
   }
 
-  .content p span {
+  .content p strong {
     display: inline-block;
   }
 

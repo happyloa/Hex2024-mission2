@@ -11,17 +11,17 @@ export default function PortfolioQuote() {
         />
         <p>
           讓使用者在觀賞與使用的旅程中，發現
-          <span>
+          <strong>
             設計的價值
             <img src="/image/deco/mark.webp" alt="標題裝飾" />
-          </span>
+          </strong>
         </p>
         <p>
           而我在設計與開發的過程中，看見
-          <span>
+          <strong>
             自己的價值
             <img src="/image/deco/mark.webp" alt="標題裝飾" />
-          </span>
+          </strong>
         </p>
         <img
           src="/image/deco/quote-right.webp"

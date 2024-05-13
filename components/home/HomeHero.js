@@ -8,15 +8,15 @@ export default function HomeHero() {
           <h1>Hi！我是 Noel</h1>
           <p>
             具有 10 年經驗的&nbsp;
-            <span>
+            <strong>
               資深 UI 設計師
               <img src="/image/deco/mark.webp" alt="標題裝飾" />
-            </span>
+            </strong>
             &nbsp;&nbsp;兼&nbsp;&nbsp;
-            <span>
+            <strong>
               前端工程師
               <img src="/image/deco/mark.webp" alt="標題裝飾" />
-            </span>
+            </strong>
             <br />
             技術雙修並行，熱衷於優化使用者的網頁體驗
           </p>

@@ -53,6 +53,7 @@
   background-color: var(--primary200);
   color: var(--primary700);
   padding: 4px 12px;
+  text-wrap: nowrap;
   transition: all 0.3s ease-in-out;
 }
 

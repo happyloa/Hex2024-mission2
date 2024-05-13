@@ -4,7 +4,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 40px;
-  width: 1076px;
+  width: 100%;
+  max-width: 1076px;
   background-color: var(--white);
   border-radius: 16px;
   padding: 104px 0 80px;
@@ -97,12 +98,19 @@
   background-color: var(--primary100);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 56px;
-  padding: 80px 178px 0;
+  padding: 80px 16px 0;
+}
+
+.main_content figure {
+  width: 100%;
+  max-width: 720px;
 }
 
 .main_content figure img {
   border-radius: 20px;
+  width: 100%;
   margin-bottom: 24px;
 }
 
@@ -133,13 +141,8 @@
 
 @media (max-width: 576px) {
   .work_modal {
-    position: fixed;
     top: 90px;
-    left: 50%;
-    right: 12px;
-    bottom: 40px;
-    transform: translate(-50%);
-    width: 351px;
+    max-width: 351px;
     padding: 88px 0 40px;
   }
 

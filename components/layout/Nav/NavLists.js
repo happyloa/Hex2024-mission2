@@ -15,11 +15,15 @@ const navItems = [
 
 export default function NavLists() {
   const pathname = usePathname();
-
   return (
     <>
       {navItems.map((item) => {
-        const isActive = pathname === item.href;
+        // 當 href 是根路徑 "/" 時，確保 pathname 正好等於 "/"
+        // 其他情況下，檢查 pathname 是否以 item.href 開頭並跟隨著 "/" 或是 pathname 正好等於 item.href
+        const isActive =
+          item.href === "/"
+            ? pathname === "/"
+            : pathname.startsWith(item.href + "/") || pathname === item.href;
         return (
           <li key={item.href} className={styles.list}>
             <Link href={item.href} style={{ fontWeight: isActive ? 600 : 400 }}>

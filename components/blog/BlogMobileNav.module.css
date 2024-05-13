@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .container {
     background-color: var(--primary100);
     display: block;
@@ -16,7 +16,8 @@
   .container ul {
     display: flex;
     gap: 32px;
-    width: 521px;
+    width: 100%;
+    max-width: 521px;
   }
 
   .container ul li {
@@ -36,5 +37,6 @@
     font-size: var(--xxs);
     font-weight: var(--normal);
     line-height: 24px;
+    text-wrap: nowrap;
   }
 }

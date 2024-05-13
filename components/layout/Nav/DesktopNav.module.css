@@ -4,7 +4,7 @@
   gap: 40px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .desktop_nav {
     display: none;
   }

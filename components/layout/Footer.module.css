@@ -78,7 +78,7 @@
   padding: 8px 24px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .footer {
     background-image: url("/image/footer/footer-bg-sm.webp");
     justify-content: center;

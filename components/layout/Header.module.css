@@ -9,14 +9,15 @@
 }
 
 .elements_wrapper {
-  width: 1296px;
+  width: 100%;
+  max-width: 1296px;
   position: relative;
   margin: 0 auto;
 }
 
 .elements_wrapper img {
   position: absolute;
-  top: -2px;
+  top: -3.5px;
 }
 
 @media (max-width: 576px) {

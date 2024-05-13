@@ -1,20 +1,17 @@
 .container {
   display: flex;
   justify-content: center;
-  gap: 134px;
-  padding: 120px 0 80px;
+  gap: 80px;
+  padding: 120px 12px 80px;
 }
 
 .container article {
-  width: 856px;
+  width: 100%;
+  max-width: 856px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .container {
     padding: 32px 12px 40px;
-  }
-
-  .container article {
-    width: 100%;
   }
 }

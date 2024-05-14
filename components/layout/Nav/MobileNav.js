@@ -44,7 +44,7 @@ export default function MobileNav() {
         }}>
         <nav>
           <ul className={styles.lists_wrapper}>
-            <NavLists />
+            <NavLists onLinkClick={toggleModal} />
           </ul>
         </nav>
       </Modal>

@@ -13,7 +13,7 @@ const navItems = [
   { href: "/contact", label: "聯絡我" },
 ];
 
-export default function NavLists() {
+export default function NavLists({ onLinkClick }) {
   const pathname = usePathname();
   return (
     <>
@@ -26,7 +26,10 @@ export default function NavLists() {
             : pathname.startsWith(item.href + "/") || pathname === item.href;
         return (
           <li key={item.href} className={styles.list}>
-            <Link href={item.href} style={{ fontWeight: isActive ? 600 : 400 }}>
+            <Link
+              href={item.href}
+              style={{ fontWeight: isActive ? 600 : 400 }}
+              onClick={onLinkClick}>
               {item.label}
             </Link>
             <span

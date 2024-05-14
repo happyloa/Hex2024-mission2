@@ -46,6 +46,48 @@ http://localhost:3000/
 
 即可在本地端預覽專案
 
+## 頁面路徑（Router Link）
+
+位於 `app`
+
+結構說明
+
+```
+app
+└── blog                       部落格頁面（/blog）
+    └── [singlePost]           單篇文章動態頁面（/blog/post）
+├── contact                    聯絡我頁面（/contact）
+├── portfolio                  作品集頁面（/portfolio）
+├── services                   服務項目頁面（/services）
+├── favicon.ico                網站圖示
+├── global.css                 全域樣式
+├── scrollBar.css              頁面卷軸樣式
+├── variables.css              樣式變數
+├── layout.js                  網站整體架構，導覽列與頁尾也在這被引入並使用
+└── page.js                    首頁（/）
+```
+
+## 元件檔案（Components）
+
+位於 `components`
+
+結構說明
+
+```
+components
+└── blog                       部落格元件庫
+    └── Posts                  部落格頁面文章列表與文章單頁元件
+├── contact                    聯絡我元件庫
+├── home                       首頁元件庫
+    ├── posts                  精選文章區塊元件庫
+    └── works                  作品區塊元件庫
+├── layout                     導覽列與頁尾元件
+    └── Nav                    導覽列選單項目、電腦版與手機版選單
+├── portfolio                  作品集元件庫
+├── services                   服務項目元件庫
+└── ui                         頁面 ui 元件庫，例如有裝飾線的標題、作品卡片等
+```
+
 ## 靜態檔案
 
 位於 `public/image` 及 `lib`
@@ -54,22 +96,22 @@ http://localhost:3000/
 
 ```
 public
-└── image                  存放圖片
-    ├── blog               部落格文章封面圖片
-        └── article-image  文章內穿插的圖片
-    ├── deco               裝飾用圖片
-    ├── footer             頁尾用圖片
-    ├── home               首頁用到的圖片
-    ├── icon               在網站上使用的各式 icon
-    ├── services           服務項目圖片
-    ├── work               與作品有關的圖片。
-        └── modal          點擊作品後彈出的 Modal 內的圖片
-    └── logo.svg           網站 Logo
+└── image                      存放圖片
+    ├── blog                   部落格文章封面圖片
+        └── article-image      文章內穿插的圖片
+    ├── deco                   裝飾用圖片
+    ├── footer                 頁尾用圖片
+    ├── home                   首頁用到的圖片
+    ├── icon                   在網站上使用的各式 icon
+    ├── services               服務項目圖片
+    ├── work                   與作品有關的圖片。
+        └── modal              點擊作品後彈出的 Modal 內的圖片
+    └── logo.svg               網站 Logo
 ```
 
 ```
 lib
-└── posts.json             所有文章資料
+└── posts.json                 所有文章資料
 ```
 
 ## 使用的套件 & 工具

@@ -21,6 +21,11 @@
   }
 
   .container ul li {
+    color: var(--primary800);
+    font-size: var(--xxs);
+    font-weight: var(--normal);
+    line-height: 24px;
+    text-wrap: nowrap;
     padding: 0 12px 4px;
   }
 
@@ -30,13 +35,5 @@
 
   .container ul li:hover {
     border-bottom: 1px solid var(--primary800);
-  }
-
-  .container ul li a {
-    color: var(--primary800);
-    font-size: var(--xxs);
-    font-weight: var(--normal);
-    line-height: 24px;
-    text-wrap: nowrap;
   }
 }

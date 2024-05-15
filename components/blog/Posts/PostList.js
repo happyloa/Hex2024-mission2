@@ -1,17 +1,16 @@
 import styles from "./PostList.module.css";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 
 import posts from "@/lib/posts.json";
 
-export default function PostList() {
-  const searchParams = useSearchParams();
-  const category = searchParams.get("category");
-
-  const filteredPosts = category
-    ? posts.filter((post) => post.postMeta.categories.includes(category))
-    : posts;
+export default function PostList({ activeCategory }) {
+  const filteredPosts =
+    activeCategory === "全部文章"
+      ? posts
+      : posts.filter((post) =>
+          post.postMeta.categories.includes(activeCategory)
+        );
 
   return (
     <>

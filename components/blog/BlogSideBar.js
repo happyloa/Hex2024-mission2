@@ -1,25 +1,8 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-
 import styles from "./BlogSideBar.module.css";
 
-export default function BlogSideBar() {
-  const router = useRouter();
-  const [activeCategory, setActiveCategory] = useState("全部文章");
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const category = params.get("category") || "全部文章";
-    setActiveCategory(category);
-  }, []);
-
+export default function BlogSideBar({ activeCategory, onCategoryChange }) {
   const handleCategoryClick = (category) => {
-    setActiveCategory(category);
-    if (category === "全部文章") {
-      router.push("/blog", undefined, { shallow: true });
-    } else {
-      router.push(`/blog?category=${category}`, undefined, { shallow: true });
-    }
+    onCategoryChange(category);
   };
 
   return (

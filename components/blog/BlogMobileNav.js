@@ -1,25 +1,8 @@
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
-
 import styles from "./BlogMobileNav.module.css";
 
-export default function BlogMobileNav() {
-  const router = useRouter();
-  const [activeCategory, setActiveCategory] = useState("");
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const category = params.get("category") || "全部文章";
-    setActiveCategory(category);
-  }, []);
-
+export default function BlogMobileNav({ activeCategory, onCategoryChange }) {
   const handleCategoryClick = (category) => {
-    setActiveCategory(category);
-    if (category === "全部文章") {
-      router.push("/blog");
-    } else {
-      router.push(`/blog?category=${category}`);
-    }
+    onCategoryChange(category);
   };
 
   return (

@@ -53,6 +53,7 @@
   color: var(--primary700);
   border-radius: 16px;
   padding: 4px 12px;
+  text-wrap: nowrap;
   transition: all 0.3s ease-in-out;
 }
 
@@ -110,10 +111,9 @@
   }
 }
 
-  /* 限制文字行數為 3 行 */
+/* 限制文字行數為 3 行 */
 @media (max-width: 576px) {
   .content_wrapper p {
-    display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
   }

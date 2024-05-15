@@ -5,7 +5,7 @@ import styles from "./BlogMobileNav.module.css";
 
 export default function BlogMobileNav() {
   const router = useRouter();
-  const [activeCategory, setActiveCategory] = useState("全部文章");
+  const [activeCategory, setActiveCategory] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -14,6 +14,7 @@ export default function BlogMobileNav() {
   }, []);
 
   const handleCategoryClick = (category) => {
+    setActiveCategory(category);
     if (category === "全部文章") {
       router.push("/blog");
     } else {

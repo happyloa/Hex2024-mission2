@@ -5,7 +5,7 @@ import styles from "./BlogSideBar.module.css";
 
 export default function BlogSideBar() {
   const router = useRouter();
-  const [activeCategory, setActiveCategory] = useState("全部文章");
+  const [activeCategory, setActiveCategory] = useState("");
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
@@ -14,6 +14,7 @@ export default function BlogSideBar() {
   }, []);
 
   const handleCategoryClick = (category) => {
+    setActiveCategory(category);
     if (category === "全部文章") {
       router.push("/blog");
     } else {
@@ -27,27 +28,32 @@ export default function BlogSideBar() {
         <ul>
           <li
             className={activeCategory === "全部文章" ? styles.active : ""}
-            onClick={() => handleCategoryClick("全部文章")}>
+            onClick={() => handleCategoryClick("全部文章")}
+          >
             全部文章
           </li>
           <li
             className={activeCategory === "UI/UX 新知" ? styles.active : ""}
-            onClick={() => handleCategoryClick("UI/UX 新知")}>
+            onClick={() => handleCategoryClick("UI/UX 新知")}
+          >
             UI/UX 新知
           </li>
           <li
             className={activeCategory === "數位產品設計" ? styles.active : ""}
-            onClick={() => handleCategoryClick("數位產品設計")}>
+            onClick={() => handleCategoryClick("數位產品設計")}
+          >
             數位產品設計
           </li>
           <li
             className={activeCategory === "平面設計" ? styles.active : ""}
-            onClick={() => handleCategoryClick("平面設計")}>
+            onClick={() => handleCategoryClick("平面設計")}
+          >
             平面設計
           </li>
           <li
             className={activeCategory === "前端開發" ? styles.active : ""}
-            onClick={() => handleCategoryClick("前端開發")}>
+            onClick={() => handleCategoryClick("前端開發")}
+          >
             前端開發
           </li>
         </ul>

@@ -1,26 +1,38 @@
 import styles from "./BlogSideBar.module.css";
 
-import Link from "next/link";
+export default function BlogSideBar({ activeCategory, onCategoryChange }) {
+  const handleCategoryClick = (category) => {
+    onCategoryChange(category);
+  };
 
-export default function BlogSideBar() {
   return (
     <aside className={styles.categories_container}>
       <nav className={styles.nav}>
         <ul>
-          <li>
-            <Link href="#">全部文章</Link>
+          <li
+            className={activeCategory === "全部文章" ? styles.active : ""}
+            onClick={() => handleCategoryClick("全部文章")}>
+            全部文章
           </li>
-          <li>
-            <Link href="#">UI/UX 新知</Link>
+          <li
+            className={activeCategory === "UI/UX 新知" ? styles.active : ""}
+            onClick={() => handleCategoryClick("UI/UX 新知")}>
+            UI/UX 新知
           </li>
-          <li>
-            <Link href="#">數位產品設計</Link>
+          <li
+            className={activeCategory === "數位產品設計" ? styles.active : ""}
+            onClick={() => handleCategoryClick("數位產品設計")}>
+            數位產品設計
           </li>
-          <li>
-            <Link href="#">平面設計</Link>
+          <li
+            className={activeCategory === "平面設計" ? styles.active : ""}
+            onClick={() => handleCategoryClick("平面設計")}>
+            平面設計
           </li>
-          <li>
-            <Link href="#">前端開發</Link>
+          <li
+            className={activeCategory === "前端開發" ? styles.active : ""}
+            onClick={() => handleCategoryClick("前端開發")}>
+            前端開發
           </li>
         </ul>
       </nav>

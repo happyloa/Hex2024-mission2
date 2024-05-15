@@ -11,6 +11,7 @@
     scrollbar-width: none;
     position: sticky;
     top: 68px;
+    z-index: 997;
   }
 
   .container ul {
@@ -21,22 +22,21 @@
   }
 
   .container ul li {
-    padding: 0 12px 4px;
-  }
-
-  .container ul li:first-child {
-    border-bottom: 1px solid var(--primary800);
-  }
-
-  .container ul li:hover {
-    border-bottom: 1px solid var(--primary800);
-  }
-
-  .container ul li a {
-    color: var(--primary800);
+    color: var(--primary600);
     font-size: var(--xxs);
     font-weight: var(--normal);
     line-height: 24px;
     text-wrap: nowrap;
+    padding: 0 12px 4px;
+  }
+
+  .container ul li:hover {
+    border-bottom: 1px solid var(--primary800);
+    color: var(--primary800);
+  }
+
+  .container ul .active {
+    border-bottom: 1px solid var(--primary800);
+    color: var(--primary800);
   }
 }

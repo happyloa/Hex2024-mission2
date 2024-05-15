@@ -4,10 +4,17 @@ import Link from "next/link";
 
 import posts from "@/lib/posts.json";
 
-export default function PostList() {
+export default function PostList({ activeCategory }) {
+  const filteredPosts =
+    activeCategory === "全部文章"
+      ? posts
+      : posts.filter((post) =>
+          post.postMeta.categories.includes(activeCategory)
+        );
+
   return (
     <>
-      {posts.map((post, idx) => (
+      {filteredPosts.map((post, idx) => (
         <Link href={"/blog" + post.postLink} key={idx}>
           <article className={styles.post_list}>
             <div className={styles.img_wrapper}>

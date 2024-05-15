@@ -1,7 +1,14 @@
+import { useEffect } from "react";
+
 import Modal from "react-modal";
+
 import styles from "./WorkModal.module.css";
 
 export default function WorkModal({ isOpen, toggleModal, title, description }) {
+  useEffect(() => {
+    Modal.setAppElement("html");
+  }, []);
+
   return (
     <Modal
       className={styles.work_modal}

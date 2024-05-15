@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./SinglePostPage.module.css";
 
 import SinglePost from "@/components/blog/Posts/SinglePost";

@@ -1,13 +1,21 @@
 import styles from "./PostList.module.css";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
 import posts from "@/lib/posts.json";
 
 export default function PostList() {
+  const searchParams = useSearchParams();
+  const category = searchParams.get("category");
+
+  const filteredPosts = category
+    ? posts.filter((post) => post.postMeta.categories.includes(category))
+    : posts;
+
   return (
     <>
-      {posts.map((post, idx) => (
+      {filteredPosts.map((post, idx) => (
         <Link href={"/blog" + post.postLink} key={idx}>
           <article className={styles.post_list}>
             <div className={styles.img_wrapper}>

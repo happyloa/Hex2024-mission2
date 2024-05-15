@@ -1,3 +1,5 @@
+import { CategoryProvider } from "@/components/blog/CategoryContext";
+
 import "./globals.css";
 import "./scrollBar.css";
 import "./variables.css";
@@ -19,12 +21,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh-Hant" className={notoSansTC.className}>
-      <body>
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    <CategoryProvider>
+      <html lang="zh-Hant" className={notoSansTC.className}>
+        <body>
+          <Header />
+          {children}
+          <Footer />
+        </body>
+      </html>
+    </CategoryProvider>
   );
 }

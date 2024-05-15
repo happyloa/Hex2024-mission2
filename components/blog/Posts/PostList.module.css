@@ -99,13 +99,22 @@
     gap: 8px;
   }
 
-  /* 限制文字行數為 3 行 */
+  /* 限制文字行數為 4 行 */
   .content_wrapper p {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
+
+  /* 限制文字行數為 3 行 */
+@media (max-width: 576px) {
+  .content_wrapper p {
+    display: -webkit-box;
     -webkit-line-clamp: 3;
     line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
 }

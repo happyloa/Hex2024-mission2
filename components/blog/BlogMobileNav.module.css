@@ -11,6 +11,7 @@
     scrollbar-width: none;
     position: sticky;
     top: 68px;
+    z-index: 997;
   }
 
   .container ul {

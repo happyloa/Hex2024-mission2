@@ -10,7 +10,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-.img_wrapper img:hover {
+.card:hover img {
   transform: scale(1.1);
 }
 
@@ -36,6 +36,7 @@
 .time_and_category ul li {
   background-color: var(--primary200);
   border-radius: 16px;
+  min-width: fit-content;
   padding: 4px 12px;
 }
 
@@ -49,5 +50,9 @@
 @media (max-width: 992px) {
   .img_wrapper img {
     width: 100%;
+  }
+
+  .time_and_category ul {
+    gap: 8px;
   }
 }

@@ -45,6 +45,7 @@
 
 .time_and_category ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
@@ -53,7 +54,7 @@
   color: var(--primary700);
   border-radius: 16px;
   padding: 4px 12px;
-  text-wrap: nowrap;
+  min-width: fit-content;
   transition: all 0.3s ease-in-out;
 }
 
@@ -97,6 +98,7 @@
   }
 
   .time_and_category ul {
+    justify-content: flex-end;
     gap: 8px;
   }
 

@@ -1,0 +1,33 @@
+.container {
+  padding: 0 24px 0;
+}
+
+.content_wrapper {
+  border-top: 1px solid var(--primary400);
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  max-width: 1296px;
+  margin: 0 auto;
+  padding: 80px 0 120px;
+}
+
+.content_wrapper h3 {
+  color: var(--primary700);
+  font-size: var(--m);
+  font-weight: var(--bolder);
+  line-height: 33.6px;
+}
+
+@media (max-width: 992px) {
+  .content_wrapper {
+    padding: 40px 22.5px 80px;
+  }
+
+  .content_wrapper h3 {
+    align-self: center;
+    font-size: var(--s);
+    line-height: 28.8px;
+  }
+}

@@ -1,5 +1,6 @@
 "use client";
 
+import { Fragment } from "react";
 import { usePathname } from "next/navigation";
 
 import styles from "./SinglePost.module.css";
@@ -31,13 +32,13 @@ export default function SinglePost() {
         <p>{post.postMeta.summary}</p>
         {/* 使用 map 方法來遍歷 postContent 裡的每個元素 */}
         {post.postContent.map((content, idx) => (
-          <>
-            <div key={idx}>
+          <Fragment key={idx}>
+            <div>
               <h2>{content.title}</h2>
               <p>{content.content}</p>
             </div>
             {/* 在第二個內容後插入所有圖片 */}
-            {idx === 1 && post.postImages ? (
+            {idx === 1 && post.postImages && (
               <div className={styles.images_wrapper}>
                 {post.postImages.map((image, imgIdx) => (
                   <figure key={imgIdx}>
@@ -46,8 +47,8 @@ export default function SinglePost() {
                   </figure>
                 ))}
               </div>
-            ) : null}
-          </>
+            )}
+          </Fragment>
         ))}
         <span className={styles.author}>Noel 主筆</span>
       </section>

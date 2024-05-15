@@ -8,6 +8,7 @@ import styles from "./SinglePostPage.module.css";
 import SinglePost from "@/components/blog/Posts/SinglePost";
 import BlogMobileNav from "@/components/blog/BlogMobileNav";
 import BlogSideBar from "@/components/blog/BlogSideBar";
+import RelatedPosts from "@/components/blog/Posts/RelatedPosts";
 
 export default function SinglePostPage() {
   const { handleCategoryChange } = useCategory();
@@ -27,6 +28,7 @@ export default function SinglePostPage() {
         </article>
         <BlogSideBar onCategoryChange={handleCategoryClick} />
       </section>
+      <RelatedPosts />
     </>
   );
 }

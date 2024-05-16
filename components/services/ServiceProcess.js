@@ -51,9 +51,9 @@ export default function ServiceProcess() {
   return (
     <section className={styles.container} id="process">
       <HeadingWithLine headingContent="服務流程" light />
-      <div className={styles.processes_container}>
+      <ol className={styles.processes_container}>
         {processesInfo.map((val, idx) => (
-          <div className={styles.card_and_arrow_container} key={idx}>
+          <li className={styles.card_and_arrow_container} key={idx}>
             <article className={styles.process_card}>
               <span className={styles.process_number}>{val.processStep}</span>
               <div className={styles.process_content}>
@@ -68,9 +68,9 @@ export default function ServiceProcess() {
                 className={styles.arrow_downward}
               />
             )}
-          </div>
+          </li>
         ))}
-      </div>
+      </ol>
     </section>
   );
 }

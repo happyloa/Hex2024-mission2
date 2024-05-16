@@ -6,7 +6,9 @@
   .container {
     background-color: var(--primary100);
     display: block;
-    overflow-x: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
     padding: 20px 12px;
     scrollbar-width: none;
     position: sticky;

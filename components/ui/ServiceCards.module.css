@@ -1,6 +1,5 @@
 .card {
-  background-image: url("/image/services/service-item-bg.webp");
-  background-size: cover;
+  background: linear-gradient(to bottom right, #000000 50%, #1e1e1e 50%);
   border-radius: 16px;
   display: flex;
   flex-direction: column;

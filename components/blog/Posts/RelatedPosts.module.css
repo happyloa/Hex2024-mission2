@@ -13,7 +13,7 @@
   padding: 80px 0 120px;
 }
 
-.content_wrapper h3 {
+.related_posts_heading {
   color: var(--primary700);
   font-size: var(--m);
   font-weight: var(--bolder);
@@ -25,7 +25,7 @@
     padding: 40px 22.5px 80px;
   }
 
-  .content_wrapper h3 {
+  .related_posts_heading {
     align-self: center;
     font-size: var(--s);
     line-height: 28.8px;

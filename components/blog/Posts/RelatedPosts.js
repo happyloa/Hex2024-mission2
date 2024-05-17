@@ -7,7 +7,7 @@ export default function RelatedPosts() {
   return (
     <section className={styles.container}>
       <div className={styles.content_wrapper}>
-        <h3>最新文章</h3>
+        <h2 className={styles.related_posts_heading}>最新文章</h2>
         <PostSlider />
         <MobilePosts />
       </div>

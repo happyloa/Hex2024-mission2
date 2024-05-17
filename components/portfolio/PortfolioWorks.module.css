@@ -22,11 +22,6 @@
 
 .pagination li {
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 40px;
-  height: 40px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -42,16 +37,20 @@
   background-color: var(--primary800);
 }
 
+.pagination li:hover a {
+  color: var(--white);
+}
+
 .pagination li a {
   color: var(--primary700);
+  display: block;
   font-size: var(--s);
   font-weight: var(--normal);
   line-height: 36px;
+  width: 40px;
+  height: 40px;
+  padding: 2px 13px;
   transition: all 0.3s ease-in-out;
-}
-
-.pagination li:hover a {
-  color: var(--white);
 }
 
 @media (max-width: 576px) {

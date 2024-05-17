@@ -34,7 +34,6 @@
   display: block;
   font-size: var(--xs);
   font-weight: var(--normal);
-  line-height: 24px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -69,7 +68,6 @@
   border-radius: 5px;
   font-size: var(--xxs);
   font-weight: var(--normal);
-  line-height: 24px;
   padding: 16px 24px;
   width: 100%;
 }
@@ -80,7 +78,6 @@
   font-size: var(--xxs);
   font-weight: var(--normal);
   resize: vertical;
-  line-height: 24px;
   padding: 16px 24px;
   width: 100%;
 }
@@ -124,7 +121,6 @@
 
   .info h3 {
     font-size: var(--xs);
-    line-height: 24px;
     margin-bottom: 16px;
   }
 
@@ -132,7 +128,6 @@
     color: var(--primary500);
     text-align: center;
     font-size: var(--xxs);
-    line-height: 24px;
   }
 
   .info p br {
@@ -154,7 +149,6 @@
 
   .form button {
     font-size: var(--xs);
-    line-height: 24px;
     padding: 16px;
     width: 100%;
   }

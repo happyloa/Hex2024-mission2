@@ -46,6 +46,5 @@
   .content_wrapper h3 {
     font-size: var(--xs);
     font-weight: var(--bolder);
-    line-height: 24px;
   }
 }

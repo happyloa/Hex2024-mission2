@@ -46,7 +46,6 @@
 .desktop_work_content p {
   font-size: var(--xxs);
   font-weight: var(--normal);
-  line-height: 24px;
   margin-bottom: 24px;
 }
 
@@ -63,7 +62,6 @@
   font-size: var(--xxs);
   font-weight: var(--normal);
   text-wrap: nowrap;
-  line-height: 24px;
   padding: 4px 12px;
 }
 
@@ -92,7 +90,6 @@
   .mobile_work_intro_wrapper h3 {
     font-size: var(--xs);
     font-weight: var(--bolder);
-    line-height: 24px;
     margin-bottom: 8px;
   }
 
@@ -101,7 +98,6 @@
     font-size: var(--xxs);
     font-weight: var(--normal);
     text-align: center;
-    line-height: 24px;
     margin-bottom: 16px;
   }
 

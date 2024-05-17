@@ -45,11 +45,9 @@
 
   .faq_card h3 {
     font-size: var(--xs);
-    line-height: 24px;
   }
 
   .faq_card p {
     font-size: var(--xxs);
-    line-height: 24px;
   }
 }

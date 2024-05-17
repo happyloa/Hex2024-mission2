@@ -68,7 +68,7 @@
   color: var(--primary200);
 }
 
-.content_wrapper h3 {
+.content_wrapper h2 {
   font-size: var(--xs);
   font-weight: var(--bold);
 }

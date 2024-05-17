@@ -8,7 +8,7 @@ export default function ContactInfo() {
       <HeadingWithLine headingContent="歡迎來信聯絡" isH1 />
       <div className={styles.info_and_form_wrapper}>
         <div className={styles.info}>
-          <h3>讓我們建立聯繫</h3>
+          <h2>讓我們建立聯繫</h2>
           <a
             href="mailto:service@hexschool.com?subject=您好，我想與您合作。&body=如果您看到這封 Email，請回覆我，期待與您合作，謝謝！"
             className={styles.email}>

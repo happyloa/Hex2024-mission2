@@ -30,7 +30,7 @@ export default function PostList({ activeCategory }) {
                     ))}
                   </ul>
                 </div>
-                <h3>{post.postMeta.title}</h3>
+                <h2>{post.postMeta.title}</h2>
                 <p>{post.postMeta.summary}</p>
               </div>
             </article>

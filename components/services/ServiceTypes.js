@@ -25,7 +25,7 @@ const cardContent = [
 export default function ServiceTypes() {
   return (
     <section className={styles.container}>
-      <HeadingWithLine headingContent="服務項目" />
+      <HeadingWithLine headingContent="服務項目" isH1 />
       <ul className={styles.card_container}>
         {cardContent.map((val, idx) => (
           <ServiceCards Icon={val.Icon} Title={val.Title} key={idx} />

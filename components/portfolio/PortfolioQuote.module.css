@@ -45,7 +45,7 @@
 .blockquote p strong img {
   z-index: -1;
   left: 50%;
-  bottom: 0;
+  bottom: -5px;
   transform: translateX(-50%);
 }
 
@@ -112,6 +112,10 @@
 
   .blockquote p strong {
     display: inline-block;
+  }
+
+  .blockquote p strong img {
+    bottom: -2px;
   }
 
   .blockquote .quoteIcon2 {

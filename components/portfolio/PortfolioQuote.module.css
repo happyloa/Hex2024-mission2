@@ -23,7 +23,7 @@
   left: 0;
 }
 
-.blockquote p {
+.blockquote .quote {
   color: var(--primary800);
   font-size: var(--s);
   font-weight: var(--normal);
@@ -31,18 +31,18 @@
   text-align: center;
 }
 
-.blockquote:nth-child(1) > p {
+.blockquote h1 {
   margin-bottom: 16px;
 }
 
-.blockquote p strong {
+.blockquote strong {
   display: inline-block;
   font-weight: var(--normal);
   position: relative;
   z-index: 0;
 }
 
-.blockquote p strong img {
+.blockquote strong img {
   z-index: -1;
   left: 50%;
   bottom: -5px;
@@ -101,20 +101,20 @@
     transform: translateX(-50%);
   }
 
-  .blockquote p {
+  .blockquote .quote {
     font-size: var(--xs);
     line-height: 30px;
   }
 
-  .blockquote:nth-child(1) > p {
+  .blockquote h1 {
     margin-bottom: 8px;
   }
 
-  .blockquote p strong {
+  .blockquote strong {
     display: inline-block;
   }
 
-  .blockquote p strong img {
+  .blockquote strong img {
     bottom: -2px;
   }
 

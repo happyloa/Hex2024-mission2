@@ -2,29 +2,26 @@
 
 import styles from "./PostSlider.module.css";
 
-import { useRef } from "react";
-import { register } from "swiper/element/bundle";
-
-register();
+import Carousel from "./CarouselSetting/Carousel";
 
 import PostCard from "@/components/ui/PostCard";
 
 import posts from "@/lib/posts.json";
 
-import swiperConfig from "@/swiperConfig";
+const OPTIONS = { align: "start", loop: true };
 
-export default function PostSlider() {
-  const swiperElRef = useRef(null);
+const PostSlider = () => {
+  const SLIDES = posts.map((post, idx) => (
+    <div className={styles.embla_slide} key={idx}>
+      <PostCard post={post} />
+    </div>
+  ));
 
   return (
-    <div className={styles.swiper_container}>
-      <swiper-container ref={swiperElRef} {...swiperConfig}>
-        {posts.map((post, idx) => (
-          <swiper-slide key={idx}>
-            <PostCard post={post} />
-          </swiper-slide>
-        ))}
-      </swiper-container>
+    <div className={styles.carousel_container}>
+      <Carousel slides={SLIDES} options={OPTIONS} />
     </div>
   );
-}
+};
+
+export default PostSlider;

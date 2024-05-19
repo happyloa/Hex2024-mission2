@@ -4,8 +4,7 @@ import Autoplay from "embla-carousel-autoplay";
 import useEmblaCarousel from "embla-carousel-react";
 import styles from "./carousel.module.css";
 
-const Carousel = (props) => {
-  const { slides, options } = props;
+const Carousel = ({ slides, options }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi) => {
@@ -26,15 +25,15 @@ const Carousel = (props) => {
   );
 
   return (
-    <section className={styles.embla}>
+    <div className={styles.embla}>
       <div className={styles.embla__viewport} ref={emblaRef}>
-        <div className={styles.embla__container}>
+        <ul className={styles.embla__container}>
           {slides.map((slide, index) => (
-            <div className={styles.embla__slide} key={index}>
+            <li className={styles.embla__slide} key={index}>
               {slide}
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
 
       <div className={styles.embla__controls}>
@@ -50,7 +49,7 @@ const Carousel = (props) => {
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

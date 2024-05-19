@@ -1,5 +1,7 @@
 "use client";
 
+import { Fragment } from "react";
+
 import styles from "./PostSlider.module.css";
 
 import Carousel from "./CarouselSetting/Carousel";
@@ -12,15 +14,15 @@ const OPTIONS = { align: "start", loop: true };
 
 const PostSlider = () => {
   const SLIDES = posts.map((post, idx) => (
-    <div className={styles.embla_slide} key={idx}>
+    <Fragment className={styles.embla_slide} key={idx}>
       <PostCard post={post} />
-    </div>
+    </Fragment>
   ));
 
   return (
-    <div className={styles.carousel_container}>
+    <section className={styles.carousel_container}>
       <Carousel slides={SLIDES} options={OPTIONS} />
-    </div>
+    </section>
   );
 };
 

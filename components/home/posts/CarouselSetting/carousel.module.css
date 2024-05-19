@@ -1,6 +1,6 @@
 .embla {
   --slide-spacing: 24px;
-  --slide-size: 33%;
+  --slide-size: calc(100% / 3);
 }
 
 .embla__viewport {

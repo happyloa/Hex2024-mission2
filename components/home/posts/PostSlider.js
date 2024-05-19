@@ -14,7 +14,7 @@ const OPTIONS = { align: "start", loop: true };
 
 const PostSlider = () => {
   const SLIDES = posts.map((post, idx) => (
-    <Fragment className={styles.embla_slide} key={idx}>
+    <Fragment key={idx}>
       <PostCard post={post} />
     </Fragment>
   ));

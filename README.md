@@ -80,6 +80,7 @@ components
 ├── contact                    聯絡我元件庫
 ├── home                       首頁元件庫
     ├── posts                  精選文章區塊元件庫
+        └── CarouselSetting    Embla Carousel 相關設定
     └── works                  作品區塊元件庫
 ├── layout                     導覽列與頁尾元件
     └── Nav                    導覽列選單項目、電腦版與手機版選單
@@ -117,7 +118,7 @@ lib
 ## 使用的套件 & 工具
 
 - [react-modal](https://www.npmjs.com/package/react-modal)
-- [swiper](https://swiperjs.com/)
+- [Embla Carousel](https://www.embla-carousel.com/)
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4](https://openai.com/)
 

@@ -1,0 +1,47 @@
+.embla {
+  --slide-spacing: 24px;
+  --slide-size: calc(100% / 3);
+}
+
+.embla__viewport {
+  overflow: hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+  margin-left: calc(var(--slide-spacing) * -1);
+}
+
+.embla__slide {
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
+}
+
+.embla__controls {
+  margin-top: 40px;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.embla__dot {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--primary300);
+  touch-action: manipulation;
+  cursor: pointer;
+  border: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.embla__dot--selected {
+  background-color: var(--black);
+}

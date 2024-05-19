@@ -1,7 +1,5 @@
 "use client";
 
-import { Fragment } from "react";
-
 import styles from "./PostSlider.module.css";
 
 import Carousel from "./CarouselSetting/Carousel";
@@ -13,11 +11,7 @@ import posts from "@/lib/posts.json";
 const OPTIONS = { align: "start", loop: true };
 
 const PostSlider = () => {
-  const SLIDES = posts.map((post, idx) => (
-    <Fragment key={idx}>
-      <PostCard post={post} />
-    </Fragment>
-  ));
+  const SLIDES = posts.map((post, idx) => <PostCard post={post} key={idx} />);
 
   return (
     <section className={styles.carousel_container}>

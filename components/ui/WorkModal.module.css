@@ -8,7 +8,7 @@
   max-width: 1076px;
   background-color: var(--white);
   border-radius: 16px;
-  padding: 104px 0 80px;
+  padding: 104px 0 0;
   overflow-y: auto;
 }
 
@@ -97,7 +97,7 @@
   flex-direction: column;
   align-items: center;
   gap: 56px;
-  padding: 80px 16px 0;
+  padding: 80px 16px;
 }
 
 .main_content figure {
@@ -138,7 +138,7 @@
 @media (max-width: 768px) {
   .work_modal {
     top: 90px;
-    padding: 88px 0 40px;
+    padding: 88px 0 0;
   }
 
   .text_wrapper {
@@ -176,7 +176,7 @@
   }
 
   .main_content {
-    padding: 40px 16px 0;
+    padding: 40px 16px;
   }
 
   .main_content figure img {

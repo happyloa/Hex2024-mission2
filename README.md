@@ -28,7 +28,7 @@ $ git clone https://github.com/happyloa/Hex2024-mission2.git
 套件安裝
 
 ```sh
-$ cd 2024-mission2
+$ cd Hex2024-mission2
 $ npm install
 ```
 

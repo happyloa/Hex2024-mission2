@@ -25,8 +25,10 @@ export default function SinglePost() {
           <span>{post.postMeta.categories.join(", ")}</span>
           <time>{post.postMeta.date + "發佈"}</time>
         </div>
-        <h1>{post.postMeta.title}</h1>
-        <h2 className={styles.subtitle}>- 探索虛擬實境技術的現狀與前景 -</h2>
+        <hgroup>
+          <h1>{post.postMeta.title}</h1>
+          <h2 className={styles.subtitle}>- 探索虛擬實境技術的現狀與前景 -</h2>
+        </hgroup>
       </section>
       <section className={styles.content_wrapper}>
         <p>{post.postMeta.summary}</p>

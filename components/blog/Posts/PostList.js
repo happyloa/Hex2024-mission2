@@ -16,7 +16,7 @@ export default function PostList({ activeCategory }) {
     <ul className={styles.post_list_wrapper}>
       {filteredPosts.map((post, idx) => (
         <li key={idx}>
-          <Link href={"/blog" + post.postLink}>
+          <Link href={"/blog" + post.postSlug}>
             <article className={styles.post_list_card}>
               <div className={styles.img_wrapper}>
                 <img src={post.postMeta.postThumb} alt={post.postMeta.title} />

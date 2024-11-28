@@ -1,6 +1,6 @@
 [
   {
-    "postLink": "/vision-pro",
+    "postSlug": "/vision-pro",
     "postMeta": {
       "postThumb": "/image/blog/article-image1.webp",
       "date": "2024/02/10",
@@ -50,7 +50,7 @@
     ]
   },
   {
-    "postLink": "/figma-dev-mode-part2",
+    "postSlug": "/figma-dev-mode-part2",
     "postMeta": {
       "postThumb": "/image/blog/article-image2.webp",
       "date": "2023/11/20",
@@ -100,7 +100,7 @@
     ]
   },
   {
-    "postLink": "/figma-dev-mode-part1",
+    "postSlug": "/figma-dev-mode-part1",
     "postMeta": {
       "postThumb": "/image/blog/article-image3.webp",
       "date": "2023/10/18",
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "postLink": "/vr-research",
+    "postSlug": "/vr-research",
     "postMeta": {
       "postThumb": "/image/blog/article-image4.webp",
       "date": "2023/09/20",
@@ -200,7 +200,7 @@
     ]
   },
   {
-    "postLink": "/target-audience",
+    "postSlug": "/target-audience",
     "postMeta": {
       "postThumb": "/image/blog/article-image5.webp",
       "date": "2023/08/10",
@@ -250,7 +250,7 @@
     ]
   },
   {
-    "postLink": "/js-framework-compare",
+    "postSlug": "/js-framework-compare",
     "postMeta": {
       "postThumb": "/image/blog/article-image6.webp",
       "date": "2023/07/03",

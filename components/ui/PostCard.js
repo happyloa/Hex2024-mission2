@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function PostCard({ post }) {
   return (
-    <Link href={"/blog" + post.postLink} className={styles.card}>
+    <Link href={"/blog" + post.postSlug} className={styles.card}>
       <article>
         <div className={styles.img_wrapper}>
           <img src={post.postMeta.postThumb} alt={post.postMeta.title} />

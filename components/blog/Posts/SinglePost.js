@@ -10,7 +10,7 @@ import posts from "@/lib/posts.json";
 export default function SinglePost() {
   const pathname = usePathname();
   const singlePost = pathname.split("/").pop();
-  const post = posts.find((post) => post.postLink === `/${singlePost}`);
+  const post = posts.find((post) => post.postSlug === `/${singlePost}`);
 
   // 如果找不到文章就顯示錯誤訊息
   if (!post) {

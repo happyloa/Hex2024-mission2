@@ -11,7 +11,7 @@ import BlogSideBar from "@/components/blog/BlogSideBar";
 import RelatedPosts from "@/components/blog/Posts/RelatedPosts";
 
 export default function SinglePostPage() {
-  const { handleCategoryChange } = useCategory();
+  const { activeCategory, handleCategoryChange } = useCategory();
   const router = useRouter();
 
   const handleCategoryClick = (category) => {
@@ -21,12 +21,18 @@ export default function SinglePostPage() {
 
   return (
     <>
-      <BlogMobileNav onCategoryChange={handleCategoryClick} />
+      <BlogMobileNav
+        activeCategory={activeCategory}
+        onCategoryChange={handleCategoryClick}
+      />
       <section className={styles.container}>
         <article>
           <SinglePost />
         </article>
-        <BlogSideBar onCategoryChange={handleCategoryClick} />
+        <BlogSideBar
+          activeCategory={activeCategory}
+          onCategoryChange={handleCategoryClick}
+        />
       </section>
       <RelatedPosts />
     </>

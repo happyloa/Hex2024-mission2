@@ -5,14 +5,15 @@ import posts from "@/lib/posts.json";
 
 const siteTitle = "2024 體驗營切版任務二 by Aaron";
 
-const normalizeSlug = (slug) => slug.replace(/^\/?/, "");
+const normalizeSlug = (slug = "") =>
+  decodeURIComponent(slug).replace(/^\/+/, "").replace(/\/+$/, "");
 
 export function generateStaticParams() {
   return posts.map((post) => ({ singlePost: normalizeSlug(post.postSlug) }));
 }
 
 export function generateMetadata({ params }) {
-  const slug = normalizeSlug(decodeURIComponent(params.singlePost));
+  const slug = normalizeSlug(params.singlePost);
   const post = posts.find((item) => normalizeSlug(item.postSlug) === slug);
 
   if (!post) {
@@ -42,7 +43,7 @@ export function generateMetadata({ params }) {
 }
 
 export default function SinglePostPage({ params }) {
-  const slug = normalizeSlug(decodeURIComponent(params.singlePost));
+  const slug = normalizeSlug(params.singlePost);
   const post = posts.find((item) => normalizeSlug(item.postSlug) === slug);
 
   if (!post) {

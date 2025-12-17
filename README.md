@@ -9,7 +9,19 @@
 
 ## 使用技術
 
-[Next.js 14](https://nextjs.org/)（React 加強版）
+- [Next.js 16](https://nextjs.org/)（預設支援 React 19 與改進版 Server Actions）
+- [React 19](https://react.dev/)（支援全新的 Action 以及強化的 Suspense 模型）
+- [Embla Carousel 8.6](https://www.embla-carousel.com/)（新版自動播放 API，更好控制互動與暫停）
+- [React Modal 3.16](https://www.npmjs.com/package/react-modal)
+
+### 主要套件版本
+
+| 套件 | 版本 |
+| --- | --- |
+| next | 16.0.10 |
+| react / react-dom | 19.2.3 |
+| embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
+| react-modal | 3.16.3 |
 
 ## 開發環境設置
 
@@ -121,6 +133,11 @@ lib
 - [Embla Carousel](https://www.embla-carousel.com/)
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4](https://openai.com/)
+
+## SEO 設定
+
+- 採用 Next.js Metadata API，站點預設以「2024 體驗營切版任務二 by Aaron」為標題模板並套用至各頁面。
+- 全站加入 description、Open Graph、Twitter Card 等基本欄位，並為部落格列表與單篇文章設定對應標題與敘述。
 
 ## 2024/05/16 助教修改建議
 

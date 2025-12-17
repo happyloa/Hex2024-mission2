@@ -3,6 +3,7 @@ import styles from "./FintechAPP.module.css";
 import CTABtn from "@/components/ui/CTABtn";
 
 export default function FintechAPP() {
+  // 理財 APP 案例：以覆蓋層搭配 CTA 呈現行動設計亮點
   return (
     <article>
       <div className={styles.container}>

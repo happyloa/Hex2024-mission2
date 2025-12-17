@@ -14,6 +14,7 @@ const navItems = [
 ];
 
 export default function NavLists({ onLinkClick }) {
+  // 導覽連結共用邏輯：計算當前路徑並標示高亮
   const pathname = usePathname();
   return (
     <>

@@ -6,6 +6,7 @@ import MobilePosts from "./posts/MobilePosts";
 import CTABtn from "../ui/CTABtn";
 
 export default function HomePosts() {
+  // 精選文章區塊，桌機與手機版以不同元件呈現
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="精選文章" />

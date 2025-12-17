@@ -5,6 +5,7 @@ export default function PricingCard({
   service = "服務內容",
   price = "2,000",
 }) {
+  // 定價卡片：顯示服務名稱、價格與示意圖示
   return (
     <li className={styles.pricing_card}>
       <img src={icon} alt={service} />

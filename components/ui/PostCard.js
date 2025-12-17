@@ -3,6 +3,7 @@ import styles from "./PostCard.module.css";
 import Link from "next/link";
 
 export default function PostCard({ post }) {
+  // 文章卡片：顯示封面、分類與發佈時間
   return (
     <Link href={"/blog" + post.postSlug} className={styles.card}>
       <article>

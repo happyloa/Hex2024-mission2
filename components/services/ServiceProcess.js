@@ -48,6 +48,7 @@ const processesInfo = [
 ];
 
 export default function ServiceProcess() {
+  // 服務流程：以資料陣列生成步驟卡片與箭頭
   return (
     <section className={styles.container} id="process">
       <HeadingWithLine headingContent="服務流程" light />

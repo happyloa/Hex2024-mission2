@@ -3,6 +3,7 @@ import styles from "./ContactInfo.module.css";
 import HeadingWithLine from "../ui/HeadingWithLine";
 
 export default function ContactInfo() {
+  // 聯絡頁的資訊與表單，提供多管道聯繫方式
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="歡迎來信聯絡" isH1 />

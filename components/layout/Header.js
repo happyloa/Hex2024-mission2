@@ -6,6 +6,7 @@ import DesktopNav from "./Nav/DesktopNav";
 import MobileNav from "./Nav/MobileNav";
 
 export default function Header() {
+  // 網站全域導覽列，整合桌機與手機選單
   return (
     <header className={styles.header}>
       <div className={styles.elements_wrapper}>

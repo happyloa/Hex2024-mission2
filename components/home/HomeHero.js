@@ -1,6 +1,7 @@
 import styles from "./HomeHero.module.css";
 
 export default function HomeHero() {
+  // 首屏介紹區塊，集中展示自我介紹與社群連結
   return (
     <section className={styles.container}>
       <div className={styles.text_and_socials_wrapper}>

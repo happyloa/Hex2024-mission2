@@ -24,6 +24,7 @@ const servicesContent = [
 ];
 
 export default function HomeServiceTypes() {
+  // 服務列表區塊，透過資料陣列輸出服務卡片
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="服務項目" />

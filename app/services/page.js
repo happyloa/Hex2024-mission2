@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "服務項目 - 2024 體驗營切版任務二",
+  title: "服務項目",
+  description: "提供品牌設計、UI/UX、前端切版等服務，協助客戶打造專業數位體驗。",
 };
 
 import ServiceTypes from "@/components/services/ServiceTypes";

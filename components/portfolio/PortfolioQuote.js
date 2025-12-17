@@ -1,6 +1,7 @@
 import styles from "./PortfolioQuote.module.css";
 
 export default function PortfolioQuote() {
+  // 作品集引言段落：凸顯設計理念與 B2B/B2C 經驗
   return (
     <section className={styles.container}>
       <blockquote className={styles.blockquote}>

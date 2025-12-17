@@ -12,6 +12,7 @@ export default function WorkCard({
   description = "請輸入作品描述",
   tags = ["作品標籤"],
 }) {
+  // 作品卡片：點擊後開啟詳情 Modal
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {

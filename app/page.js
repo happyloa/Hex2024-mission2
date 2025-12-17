@@ -1,5 +1,6 @@
 export const metadata = {
-  title: "首頁 - 2024 體驗營切版任務二",
+  title: "首頁",
+  description: "首頁聚焦作品、服務與最新部落格文章，快速認識 2024 體驗營切版任務二。",
 };
 
 import HomeHero from "@/components/home/HomeHero";

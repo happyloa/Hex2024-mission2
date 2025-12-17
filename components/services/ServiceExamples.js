@@ -31,6 +31,7 @@ const examplesInfo = [
 ];
 
 export default function ServiceExamples() {
+  // 客戶案例：重複利用 WorkCard 展示四個不同專案
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="客戶案例" />

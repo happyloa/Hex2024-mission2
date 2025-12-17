@@ -5,6 +5,7 @@ import useEmblaCarousel from "embla-carousel-react";
 import styles from "./carousel.module.css";
 
 const Carousel = ({ slides, options }) => {
+  // Embla Carousel 主體：啟用自動播放並監聽圓點導覽
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
   const onNavButtonClick = useCallback((emblaApi) => {

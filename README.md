@@ -134,6 +134,11 @@ lib
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4](https://openai.com/)
 
+## SEO 設定
+
+- 採用 Next.js Metadata API，站點預設以「2024 體驗營切版任務二 by Aaron」為標題模板並套用至各頁面。
+- 全站加入 description、Open Graph、Twitter Card 等基本欄位，並為部落格列表與單篇文章設定對應標題與敘述。
+
 ## 2024/05/16 助教修改建議
 
 ![](https://i.imgur.com/WBpnu7g.png)

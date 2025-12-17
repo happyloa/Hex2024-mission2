@@ -1,18 +1,10 @@
 "use client";
 
 import { Fragment } from "react";
-import { usePathname } from "next/navigation";
 
 import styles from "./SinglePost.module.css";
 
-import posts from "@/lib/posts.json";
-
-export default function SinglePost() {
-  // 根據目前路徑比對 posts.json，組出單篇文章內容
-  const pathname = usePathname();
-  const singlePost = pathname.split("/").pop();
-  const post = posts.find((post) => post.postSlug === `/${singlePost}`);
-
+export default function SinglePost({ post }) {
   // 如果找不到文章就顯示錯誤訊息
   if (!post) {
     return <p>沒有該篇文章</p>;

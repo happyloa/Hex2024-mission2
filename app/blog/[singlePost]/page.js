@@ -1,40 +1,47 @@
-"use client";
+import { notFound } from "next/navigation";
 
-import { useRouter } from "next/navigation";
-import { useCategory } from "@/components/blog/CategoryContext";
+import SinglePostPageContent from "@/components/blog/SinglePostPageContent";
+import posts from "@/lib/posts.json";
 
-import styles from "./SinglePostPage.module.css";
+const siteTitle = "2024 體驗營切版任務二 by Aaron";
 
-import SinglePost from "@/components/blog/Posts/SinglePost";
-import BlogMobileNav from "@/components/blog/BlogMobileNav";
-import BlogSideBar from "@/components/blog/BlogSideBar";
-import RelatedPosts from "@/components/blog/Posts/RelatedPosts";
+export function generateMetadata({ params }) {
+  const slug = `/${decodeURIComponent(params.singlePost)}`;
+  const post = posts.find((item) => item.postSlug === slug);
 
-export default function SinglePostPage() {
-  const { activeCategory, handleCategoryChange } = useCategory();
-  const router = useRouter();
+  if (!post) {
+    return {
+      title: `部落格 | ${siteTitle}`,
+      description: "找不到指定的文章。",
+    };
+  }
 
-  const handleCategoryClick = (category) => {
-    handleCategoryChange(category);
-    router.push("/blog", undefined, { shallow: true });
+  return {
+    title: `${post.postMeta.title} | ${siteTitle}`,
+    description: post.postMeta.summary,
+    openGraph: {
+      title: `${post.postMeta.title} | ${siteTitle}`,
+      description: post.postMeta.summary,
+      url: `https://hex2024.worksbyaaron.com/blog/${params.singlePost}`,
+      siteName: siteTitle,
+      locale: "zh_TW",
+      type: "article",
+    },
+    twitter: {
+      title: `${post.postMeta.title} | ${siteTitle}`,
+      description: post.postMeta.summary,
+      card: "summary_large_image",
+    },
   };
+}
 
-  return (
-    <>
-      <BlogMobileNav
-        activeCategory={activeCategory}
-        onCategoryChange={handleCategoryClick}
-      />
-      <section className={styles.container}>
-        <article>
-          <SinglePost />
-        </article>
-        <BlogSideBar
-          activeCategory={activeCategory}
-          onCategoryChange={handleCategoryClick}
-        />
-      </section>
-      <RelatedPosts />
-    </>
-  );
+export default function SinglePostPage({ params }) {
+  const slug = `/${decodeURIComponent(params.singlePost)}`;
+  const post = posts.find((item) => item.postSlug === slug);
+
+  if (!post) {
+    notFound();
+  }
+
+  return <SinglePostPageContent post={post} />;
 }

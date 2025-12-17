@@ -5,7 +5,6 @@ import Link from "next/link";
 import posts from "@/lib/posts.json";
 
 export default function PostList({ activeCategory }) {
-  // 依據目前選擇的分類篩選出要渲染的文章列表
   const filteredPosts =
     activeCategory === "全部文章"
       ? posts

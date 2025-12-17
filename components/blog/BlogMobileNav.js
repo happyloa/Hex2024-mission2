@@ -1,7 +1,6 @@
 import styles from "./BlogMobileNav.module.css";
 
 export default function BlogMobileNav({ activeCategory, onCategoryChange }) {
-  // 手機版類別選單：點擊切換 Context 中的分類狀態
   const handleCategoryClick = (category) => {
     onCategoryChange(category);
   };

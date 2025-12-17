@@ -3,6 +3,7 @@ import styles from "./StarTravel.module.css";
 import CTABtn from "@/components/ui/CTABtn";
 
 export default function StarTravel() {
+  // 星際旅行案例：展示主視覺並導向作品集
   return (
     <article>
       <div className={styles.container}>

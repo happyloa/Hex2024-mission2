@@ -3,6 +3,7 @@ import styles from "./AestheticClinic.module.css";
 import CTABtn from "@/components/ui/CTABtn";
 
 export default function AestheticClinic() {
+  // 醫美診所案例：包含桌機與手機版的 CTA 區塊
   return (
     <article>
       <div className={styles.container}>

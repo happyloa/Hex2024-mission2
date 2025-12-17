@@ -8,6 +8,7 @@ import styles from "./SinglePost.module.css";
 import posts from "@/lib/posts.json";
 
 export default function SinglePost() {
+  // 根據目前路徑比對 posts.json，組出單篇文章內容
   const pathname = usePathname();
   const singlePost = pathname.split("/").pop();
   const post = posts.find((post) => post.postSlug === `/${singlePost}`);

@@ -42,6 +42,7 @@ const portfolioCardsInfo = [
 ];
 
 export default function PortfolioWorks() {
+  // 作品集列表：以 WorkCard 呈現多個案例並附上分頁占位
   return (
     <section className={styles.container}>
       <ul className={styles.card_wrapper}>

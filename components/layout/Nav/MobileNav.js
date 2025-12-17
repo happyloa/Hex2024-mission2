@@ -8,6 +8,7 @@ import NavLists from "./NavLists";
 import styles from "./MobileNav.module.css";
 
 export default function MobileNav() {
+  // 手機版導覽列：使用 React Modal 顯示選單
   const [isOpen, setIsOpen] = useState(false);
 
   function toggleModal() {

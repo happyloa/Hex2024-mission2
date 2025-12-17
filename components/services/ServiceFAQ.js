@@ -22,6 +22,7 @@ const faqData = [
 ];
 
 export default function ServiceFAQ() {
+  // 常見問題：以列表輸出事先準備好的問答
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="常見問題" />

@@ -5,6 +5,7 @@ import Modal from "react-modal";
 import styles from "./WorkModal.module.css";
 
 export default function WorkModal({ isOpen, toggleModal, title, description }) {
+  // 作品詳情 Modal，開啟時鎖定可及性掛載元素
   useEffect(() => {
     Modal.setAppElement("html");
   }, []);
@@ -54,14 +55,14 @@ export default function WorkModal({ isOpen, toggleModal, title, description }) {
       </section>
       <section className={styles.main_content}>
         <figure>
-          <img src="/image/work/modal/modal-image1.webp" />
+          <img src="/image/work/modal/modal-image1.webp" alt="星際旅行主視覺展示" />
           <h4>主視覺</h4>
           <figcaption>
             可直接設定日期、起迄星球、張數，快速查詢可購買的票券。
           </figcaption>
         </figure>
         <figure>
-          <img src="/image/work/modal/modal-image2.webp" />
+          <img src="/image/work/modal/modal-image2.webp" alt="星際旅行推薦查詢畫面" />
           <h4>推薦查詢</h4>
           <figcaption>
             給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。

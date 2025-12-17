@@ -22,6 +22,7 @@ const pricingInfo = [
 ];
 
 export default function ServicePricing() {
+  // 價格表：以卡片方式呈現三種主要服務費用
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="價格表" />

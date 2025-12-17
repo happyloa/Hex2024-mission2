@@ -11,6 +11,7 @@ import posts from "@/lib/posts.json";
 const OPTIONS = { align: "start", loop: true };
 
 const PostSlider = () => {
+  // 桌機版輪播：將文章轉為滑動卡片
   const SLIDES = posts.map((post, idx) => <PostCard post={post} key={idx} />);
 
   return (

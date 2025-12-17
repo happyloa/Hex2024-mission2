@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 
 export const useDotButton = (emblaApi, onButtonClick) => {
+  // 透過 Embla API 更新圓點數量與當前選取索引
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [scrollSnaps, setScrollSnaps] = useState([]);
 

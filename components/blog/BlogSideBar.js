@@ -1,6 +1,7 @@
 import styles from "./BlogSideBar.module.css";
 
 export default function BlogSideBar({ activeCategory, onCategoryChange }) {
+  // 桌機側邊欄：使用相同分類按鈕切換文章列表
   const handleCategoryClick = (category) => {
     onCategoryChange(category);
   };

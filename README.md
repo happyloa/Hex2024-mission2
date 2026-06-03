@@ -18,8 +18,8 @@
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.0.10 |
-| react / react-dom | 19.2.3 |
+| next | 16.2.7 |
+| react / react-dom | 19.2.7 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 | react-modal | 3.16.3 |
 
@@ -72,7 +72,7 @@ app
 ├── portfolio                  作品集頁面（/portfolio）
 ├── services                   服務項目頁面（/services）
 ├── favicon.ico                網站圖示
-├── global.css                 全域樣式
+├── globals.css                全域樣式
 ├── scrollBar.css              頁面卷軸樣式
 ├── variables.css              樣式變數
 ├── layout.js                  網站整體架構，導覽列與頁尾也在這被引入並使用

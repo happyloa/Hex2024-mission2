@@ -41,14 +41,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <CategoryProvider>
-      <html lang="zh-Hant" className={notoSansTC.className}>
-        <body>
+    <html lang="zh-Hant" className={notoSansTC.className}>
+      <body>
+        <CategoryProvider>
           <Header />
           {children}
           <Footer />
-        </body>
-      </html>
-    </CategoryProvider>
+        </CategoryProvider>
+      </body>
+    </html>
   );
 }

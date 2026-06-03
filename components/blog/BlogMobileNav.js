@@ -1,8 +1,17 @@
+"use client";
+
+import { useRouter } from "next/navigation";
 import styles from "./BlogMobileNav.module.css";
 
-export default function BlogMobileNav({ activeCategory, onCategoryChange }) {
+export default function BlogMobileNav({ activeCategory = "全部文章" }) {
+  const router = useRouter();
+
   const handleCategoryClick = (category) => {
-    onCategoryChange(category);
+    if (category === "全部文章") {
+      router.push("/blog");
+    } else {
+      router.push(`/blog?category=${encodeURIComponent(category)}`);
+    }
   };
 
   return (

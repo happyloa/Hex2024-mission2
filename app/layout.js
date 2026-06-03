@@ -1,5 +1,3 @@
-import { CategoryProvider } from "@/components/blog/CategoryContext";
-
 import "./globals.css";
 import "./scrollBar.css";
 import "./variables.css";
@@ -43,11 +41,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="zh-Hant" className={notoSansTC.className}>
       <body>
-        <CategoryProvider>
-          <Header />
-          {children}
-          <Footer />
-        </CategoryProvider>
+        <Header />
+        {children}
+        <Footer />
       </body>
     </html>
   );

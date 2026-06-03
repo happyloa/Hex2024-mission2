@@ -44,7 +44,10 @@ export default function HomeHero() {
         </ul>
       </div>
       <div className={styles.img_wrapper}>
-        <img alt="Hero 圖片" />
+        <picture>
+          <source media="(max-width: 1200px)" srcSet="/image/home/hero-sm.webp" />
+          <img src="/image/home/hero-lg.webp" alt="Hero 圖片" fetchPriority="high" />
+        </picture>
       </div>
     </section>
   );

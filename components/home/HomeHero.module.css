@@ -67,7 +67,6 @@
 }
 
 .img_wrapper img {
-  content: url("/image/home/hero-lg.webp");
   display: block;
   width: 100%;
   height: auto;
@@ -76,10 +75,6 @@
 @media (max-width: 1200px) {
   .container {
     flex-direction: column-reverse;
-  }
-
-  .img_wrapper img {
-    content: url("/image/home/hero-sm.webp");
   }
 
   .text_and_socials_wrapper {

@@ -1,4 +1,6 @@
 .work_modal {
+  border: none;
+  margin: 0 auto;
   position: fixed;
   top: 120px;
   left: 50%;
@@ -10,26 +12,11 @@
   border-radius: 16px;
   padding: 104px 0 0;
   overflow-y: auto;
+  max-height: calc(100vh - 160px);
 }
 
-.work_modal_overlay {
+.work_modal::backdrop {
   background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0;
-  transition: all 300ms ease-in-out;
-  z-index: 1000;
-}
-
-.work_modal_overlayAfterOpen {
-  opacity: 1;
-}
-
-.work_modal_overlayBeforeClose {
-  opacity: 0;
 }
 
 .text_wrapper {
@@ -139,6 +126,7 @@
   .work_modal {
     top: 90px;
     padding: 88px 0 0;
+    max-height: calc(100vh - 130px);
   }
 
   .text_wrapper {

@@ -1,27 +1,53 @@
-import { useEffect } from "react";
+"use client";
 
-import Modal from "react-modal";
+import { useEffect, useRef } from "react";
 
 import styles from "./WorkModal.module.css";
 
 export default function WorkModal({ isOpen, toggleModal, title, description }) {
-  // 作品詳情 Modal，開啟時鎖定可及性掛載元素
+  const dialogRef = useRef(null);
+
   useEffect(() => {
-    Modal.setAppElement("html");
-  }, []);
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    if (isOpen) {
+      if (!dialog.open) {
+        dialog.showModal();
+      }
+    } else {
+      if (dialog.open) {
+        dialog.close();
+      }
+    }
+  }, [isOpen]);
+
+  useEffect(() => {
+    const dialog = dialogRef.current;
+    if (!dialog) return;
+
+    const handleCancel = (e) => {
+      e.preventDefault();
+      toggleModal();
+    };
+
+    dialog.addEventListener("cancel", handleCancel);
+    return () => {
+      dialog.removeEventListener("cancel", handleCancel);
+    };
+  }, [toggleModal]);
+
+  const handleBackdropClick = (e) => {
+    if (e.target === dialogRef.current) {
+      toggleModal();
+    }
+  };
 
   return (
-    <Modal
+    <dialog
+      ref={dialogRef}
       className={styles.work_modal}
-      overlayClassName={{
-        base: styles.work_modal_overlay,
-        afterOpen: styles.work_modal_overlayAfterOpen,
-        beforeClose: styles.work_modal_overlayBeforeClose,
-      }}
-      closeTimeoutMS={300}
-      isOpen={isOpen}
-      onRequestClose={toggleModal}
-      ariaHideApp={true}>
+      onClick={handleBackdropClick}>
       <img
         src="/image/icon/close.svg"
         alt="關閉 Modal"
@@ -69,6 +95,6 @@ export default function WorkModal({ isOpen, toggleModal, title, description }) {
           </figcaption>
         </figure>
       </section>
-    </Modal>
+    </dialog>
   );
 }

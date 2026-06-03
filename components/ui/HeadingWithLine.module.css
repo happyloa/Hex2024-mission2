@@ -4,14 +4,6 @@
   align-items: center;
 }
 
-.srcImage1 {
-  content: url("/image/deco/title-deco-left-lg.webp");
-}
-
-.srcImage2 {
-  content: url("/image/deco/title-deco-right-lg.webp");
-}
-
 .heading {
   font-size: var(--l);
   font-weight: var(--bold);
@@ -22,14 +14,6 @@
 }
 
 @media (max-width: 576px) {
-  .srcImage1 {
-    content: url("/image/deco/title-deco-left-sm.webp");
-  }
-
-  .srcImage2 {
-    content: url("/image/deco/title-deco-right-sm.webp");
-  }
-
   .heading {
     font-size: var(--s);
     font-weight: var(--bolder);

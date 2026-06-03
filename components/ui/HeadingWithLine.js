@@ -15,11 +15,17 @@ export default function HeadingWithLine({
 
   return (
     <div className={styles.heading_wrapper}>
-      <img alt="標題左邊裝飾" className={styles.srcImage1} />
+      <picture className={styles.srcImage1}>
+        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-left-sm.webp" />
+        <img src="/image/deco/title-deco-left-lg.webp" alt="標題左邊裝飾" />
+      </picture>
       <HeadingTag className={styles.heading} style={headingStyle}>
         {headingContent}
       </HeadingTag>
-      <img alt="標題右邊裝飾" className={styles.srcImage2} />
+      <picture className={styles.srcImage2}>
+        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-right-sm.webp" />
+        <img src="/image/deco/title-deco-right-lg.webp" alt="標題右邊裝飾" />
+      </picture>
     </div>
   );
 }

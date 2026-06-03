@@ -1,38 +1,38 @@
-"use client";
-
-import { useRouter } from "next/navigation";
-import { useCategory } from "@/components/blog/CategoryContext";
-
 import styles from "./SinglePostPage.module.css";
 
 import SinglePost from "@/components/blog/Posts/SinglePost";
 import BlogMobileNav from "@/components/blog/BlogMobileNav";
 import BlogSideBar from "@/components/blog/BlogSideBar";
 import RelatedPosts from "@/components/blog/Posts/RelatedPosts";
+import posts from "@/lib/posts.json";
 
-export default function SinglePostPage() {
-  const { activeCategory, handleCategoryChange } = useCategory();
-  const router = useRouter();
-
-  const handleCategoryClick = (category) => {
-    handleCategoryChange(category);
-    router.push("/blog", undefined, { shallow: true });
+export async function generateMetadata({ params }) {
+  const { singlePost } = await params;
+  const post = posts.find((p) => p.postSlug === `/${singlePost}`);
+  if (!post) {
+    return {
+      title: "文章不存在",
+      description: "沒有該篇文章內容",
+    };
+  }
+  return {
+    title: post.postMeta.title,
+    description: post.postMeta.summary,
   };
+}
+
+export default async function SinglePostPage({ params }) {
+  const { singlePost } = await params;
+  const post = posts.find((p) => p.postSlug === `/${singlePost}`);
 
   return (
     <>
-      <BlogMobileNav
-        activeCategory={activeCategory}
-        onCategoryChange={handleCategoryClick}
-      />
+      <BlogMobileNav />
       <section className={styles.container}>
         <article>
-          <SinglePost />
+          <SinglePost post={post} />
         </article>
-        <BlogSideBar
-          activeCategory={activeCategory}
-          onCategoryChange={handleCategoryClick}
-        />
+        <BlogSideBar />
       </section>
       <RelatedPosts />
     </>

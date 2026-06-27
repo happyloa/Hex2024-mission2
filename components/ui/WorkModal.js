@@ -1,47 +1,10 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-
 import styles from "./WorkModal.module.css";
+import { useDialog } from "@/lib/useDialog";
 
 export default function WorkModal({ isOpen, toggleModal, title, description }) {
-  const dialogRef = useRef(null);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    if (isOpen) {
-      if (!dialog.open) {
-        dialog.showModal();
-      }
-    } else {
-      if (dialog.open) {
-        dialog.close();
-      }
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    const handleCancel = (e) => {
-      e.preventDefault();
-      toggleModal();
-    };
-
-    dialog.addEventListener("cancel", handleCancel);
-    return () => {
-      dialog.removeEventListener("cancel", handleCancel);
-    };
-  }, [toggleModal]);
-
-  const handleBackdropClick = (e) => {
-    if (e.target === dialogRef.current) {
-      toggleModal();
-    }
-  };
+  const { dialogRef, handleBackdropClick } = useDialog(isOpen, toggleModal);
 
   return (
     <dialog

@@ -1,54 +1,20 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import NavLists from "./NavLists";
+import { useDialog } from "@/lib/useDialog";
 
 import styles from "./MobileNav.module.css";
 
 export default function MobileNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const dialogRef = useRef(null);
 
   function toggleModal() {
     setIsOpen(!isOpen);
   }
 
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    if (isOpen) {
-      if (!dialog.open) {
-        dialog.showModal();
-      }
-    } else {
-      if (dialog.open) {
-        dialog.close();
-      }
-    }
-  }, [isOpen]);
-
-  useEffect(() => {
-    const dialog = dialogRef.current;
-    if (!dialog) return;
-
-    const handleCancel = (e) => {
-      e.preventDefault();
-      toggleModal();
-    };
-
-    dialog.addEventListener("cancel", handleCancel);
-    return () => {
-      dialog.removeEventListener("cancel", handleCancel);
-    };
-  }, [toggleModal]);
-
-  const handleBackdropClick = (e) => {
-    if (e.target === dialogRef.current) {
-      toggleModal();
-    }
-  };
+  const { dialogRef, handleBackdropClick } = useDialog(isOpen, toggleModal);
 
   return (
     <>

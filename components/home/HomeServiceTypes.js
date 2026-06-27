@@ -3,25 +3,7 @@ import styles from "./HomeServiceTypes.module.css";
 import HeadingWithLine from "../ui/HeadingWithLine";
 import ServiceCards from "../ui/ServiceCards";
 import CTABtn from "../ui/CTABtn";
-
-const servicesContent = [
-  {
-    Icon: `/image/services/service-item-visual.svg`,
-    Title: "平面設計",
-  },
-  {
-    Icon: `/image/services/service-item-ui.svg`,
-    Title: "UI 設計",
-  },
-  {
-    Icon: `/image/services/service-item-html&css.svg`,
-    Title: "切版服務",
-  },
-  {
-    Icon: `/image/services/service-item-front-end.svg`,
-    Title: "前端開發",
-  },
-];
+import { SERVICE_TYPES } from "@/lib/serviceTypes";
 
 export default function HomeServiceTypes() {
   // 服務列表區塊，透過資料陣列輸出服務卡片
@@ -29,8 +11,8 @@ export default function HomeServiceTypes() {
     <section className={styles.container}>
       <HeadingWithLine headingContent="服務項目" />
       <ul className={styles.servicesCard_container}>
-        {servicesContent.map((val, idx) => (
-          <ServiceCards Icon={val.Icon} Title={val.Title} key={idx} />
+        {SERVICE_TYPES.map((val) => (
+          <ServiceCards Icon={val.Icon} Title={val.Title} key={val.Title} />
         ))}
       </ul>
       <div className={styles.content_wrapper}>

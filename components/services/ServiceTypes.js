@@ -2,25 +2,7 @@ import styles from "./ServiceTypes.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 import ServiceCards from "../ui/ServiceCards";
-
-const cardContent = [
-  {
-    Icon: `/image/services/service-item-visual.svg`,
-    Title: "平面設計",
-  },
-  {
-    Icon: `/image/services/service-item-ui.svg`,
-    Title: "UI 設計",
-  },
-  {
-    Icon: `/image/services/service-item-html&css.svg`,
-    Title: "切版服務",
-  },
-  {
-    Icon: `/image/services/service-item-front-end.svg`,
-    Title: "前端開發",
-  },
-];
+import { SERVICE_TYPES } from "@/lib/serviceTypes";
 
 export default function ServiceTypes() {
   // 服務項目總覽，重複利用 ServiceCards 呈現四種服務
@@ -28,8 +10,8 @@ export default function ServiceTypes() {
     <section className={styles.container}>
       <HeadingWithLine headingContent="服務項目" isH1 />
       <ul className={styles.card_container}>
-        {cardContent.map((val, idx) => (
-          <ServiceCards Icon={val.Icon} Title={val.Title} key={idx} />
+        {SERVICE_TYPES.map((val) => (
+          <ServiceCards Icon={val.Icon} Title={val.Title} key={val.Title} />
         ))}
       </ul>
     </section>

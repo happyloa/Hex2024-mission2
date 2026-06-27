@@ -61,21 +61,7 @@ export default function MobileNav() {
       <dialog
         ref={dialogRef}
         onClick={handleBackdropClick}
-        className={styles.mobile_dialog}
-        style={{
-          position: "fixed",
-          top: "0",
-          left: "0",
-          right: "0",
-          bottom: "auto",
-          width: "100%",
-          maxWidth: "100%",
-          margin: "0",
-          border: "none",
-          padding: "96px 0 40px",
-          backgroundColor: "var(--white)",
-          boxSizing: "border-box",
-        }}>
+        className={styles.mobile_dialog}>
         <Link href="/" className={styles.logo_link} onClick={toggleModal}>
           <img src="/image/logo.svg" alt="網站 Logo" />
         </Link>

@@ -20,6 +20,21 @@
     gap: 24px;
   }
 
+  .mobile_dialog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    border: none;
+    padding: 96px 0 40px;
+    background-color: var(--white);
+    box-sizing: border-box;
+  }
+
   .mobile_dialog::backdrop {
     background-color: rgba(0, 0, 0, 0.7);
   }

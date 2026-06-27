@@ -12,16 +12,15 @@
 - [Next.js 16](https://nextjs.org/)（預設支援 React 19 與改進版 Server Actions）
 - [React 19](https://react.dev/)（支援全新的 Action 以及強化的 Suspense 模型）
 - [Embla Carousel 8.6](https://www.embla-carousel.com/)（新版自動播放 API，更好控制互動與暫停）
-- [React Modal 3.16](https://www.npmjs.com/package/react-modal)
+- HTML5 原生 `<dialog>` 元素（替代第三方套件，用於作品彈窗與手機版選單）
 
 ### 主要套件版本
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.2.7 |
+| next | 16.2.9 |
 | react / react-dom | 19.2.7 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
-| react-modal | 3.16.3 |
 
 ## 開發環境設置
 
@@ -129,7 +128,6 @@ lib
 
 ## 使用的套件 & 工具
 
-- [react-modal](https://www.npmjs.com/package/react-modal)
 - [Embla Carousel](https://www.embla-carousel.com/)
 - [TinyPNG](https://tinypng.com/)
 - [ChatGPT 4](https://openai.com/)

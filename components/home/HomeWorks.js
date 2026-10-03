@@ -11,11 +11,11 @@ export default function HomeWorks() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="作品介紹" />
-      <main>
+      <div>
         <StarTravel />
         <FintechAPP />
         <AestheticClinic />
-      </main>
+      </div>
     </section>
   );
 }

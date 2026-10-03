@@ -16,15 +16,15 @@ export default function HeadingWithLine({
   return (
     <div className={styles.heading_wrapper}>
       <picture className={styles.srcImage1}>
-        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-left-sm.webp" />
-        <img src="/image/deco/title-deco-left-lg.webp" alt="標題左邊裝飾" />
+        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-left-sm.webp" width={56} height={6} />
+        <img src="/image/deco/title-deco-left-lg.webp" alt="" width={100} height={6} />
       </picture>
       <HeadingTag className={styles.heading} style={headingStyle}>
         {headingContent}
       </HeadingTag>
       <picture className={styles.srcImage2}>
-        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-right-sm.webp" />
-        <img src="/image/deco/title-deco-right-lg.webp" alt="標題右邊裝飾" />
+        <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-right-sm.webp" width={56} height={6} />
+        <img src="/image/deco/title-deco-right-lg.webp" alt="" width={100} height={6} />
       </picture>
     </div>
   );

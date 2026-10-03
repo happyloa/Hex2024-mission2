@@ -29,6 +29,7 @@ export default function NavLists({ onLinkClick }) {
           <li key={item.href} className={styles.list}>
             <Link
               href={item.href}
+              aria-current={isActive ? "page" : undefined}
               style={{ fontWeight: isActive ? 600 : 400 }}
               onClick={onLinkClick}>
               {item.label}

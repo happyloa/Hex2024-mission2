@@ -11,7 +11,7 @@ export default function Header() {
     <header className={styles.header}>
       <div className={styles.elements_wrapper}>
         <Link href="/">
-          <img src="/image/logo.svg" alt="網站 Logo" />
+          <img src="/image/logo.svg" alt="網站 Logo" width={90} height={40} />
         </Link>
         <DesktopNav />
         <MobileNav />

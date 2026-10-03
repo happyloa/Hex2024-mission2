@@ -11,6 +11,7 @@
 
   .mobile_nav img {
     width: 40px;
+    height: auto;
   }
 
   .lists_wrapper {
@@ -51,6 +52,7 @@
 
   .close_btn img {
     width: 40px;
+    height: auto;
   }
 
   .logo_link {

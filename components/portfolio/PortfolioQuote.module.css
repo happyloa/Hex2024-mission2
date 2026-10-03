@@ -68,7 +68,7 @@
   gap: 8px;
 }
 
-.content_wrapper h3 {
+.content_wrapper h2 {
   color: var(--primary600);
   font-size: var(--xxs);
   font-weight: var(--normal);

@@ -1,25 +1,30 @@
 "use client";
 
+import { useId } from "react";
+import Image from "next/image";
 import styles from "./WorkModal.module.css";
 import { useDialog } from "@/lib/useDialog";
 
 export default function WorkModal({ isOpen, toggleModal, title, description }) {
   const { dialogRef, handleBackdropClick } = useDialog(isOpen, toggleModal);
+  const titleId = useId();
 
   return (
     <dialog
       ref={dialogRef}
       className={styles.work_modal}
+      aria-labelledby={titleId}
       onClick={handleBackdropClick}>
-      <img
-        src="/image/icon/close.svg"
-        alt="關閉 Modal"
+      <button
+        type="button"
+        aria-label="關閉作品詳情"
         className={styles.close_icon}
-        onClick={toggleModal}
-      />
+        onClick={toggleModal}>
+        <img src="/image/icon/close.svg" alt="" width={32} height={32} />
+      </button>
       <section className={styles.text_wrapper}>
         <div className={styles.title}>
-          <h3>{title}</h3>
+          <h3 id={titleId}>{title}</h3>
           <p>{description}</p>
         </div>
         <div className={styles.intro}>
@@ -44,14 +49,14 @@ export default function WorkModal({ isOpen, toggleModal, title, description }) {
       </section>
       <section className={styles.main_content}>
         <figure>
-          <img src="/image/work/modal/modal-image1.webp" alt="星際旅行主視覺展示" />
+          <Image src="/image/work/modal/modal-image1.webp" alt="星際旅行主視覺展示" width={720} height={488} sizes="(max-width: 800px) 90vw, 720px" />
           <h4>主視覺</h4>
           <figcaption>
             可直接設定日期、起迄星球、張數，快速查詢可購買的票券。
           </figcaption>
         </figure>
         <figure>
-          <img src="/image/work/modal/modal-image2.webp" alt="星際旅行推薦查詢畫面" />
+          <Image src="/image/work/modal/modal-image2.webp" alt="星際旅行推薦查詢畫面" width={720} height={656} sizes="(max-width: 800px) 90vw, 720px" />
           <h4>推薦查詢</h4>
           <figcaption>
             給予最快起飛，以及最熱門的景點推薦，協助使用者進行選擇。

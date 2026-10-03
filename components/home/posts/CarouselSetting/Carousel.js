@@ -44,6 +44,8 @@ const Carousel = ({ slides, options }) => {
           {scrollSnaps.map((_, index) => (
             <DotButton
               key={index}
+              aria-label={`前往第 ${index + 1} 組文章`}
+              aria-pressed={index === selectedIndex}
               onClick={() => onDotButtonClick(index)}
               className={`${styles["embla__dot"]} ${
                 index === selectedIndex ? styles["embla__dot--selected"] : ""

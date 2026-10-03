@@ -1,6 +1,15 @@
 import styles from "./ServiceProcess.module.css";
+import { Tourney } from "next/font/google";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
+
+const tourney = Tourney({
+  subsets: ["latin"],
+  weight: "400",
+  display: "swap",
+  variable: "--font-tourney",
+  preload: false,
+});
 
 const processesInfo = [
   {
@@ -50,7 +59,7 @@ const processesInfo = [
 export default function ServiceProcess() {
   // 服務流程：以資料陣列生成步驟卡片與箭頭
   return (
-    <section className={styles.container} id="process">
+    <section className={`${styles.container} ${tourney.variable}`} id="process">
       <HeadingWithLine headingContent="服務流程" light />
       <ol className={styles.processes_container}>
         {processesInfo.map((val, idx) => (
@@ -65,7 +74,9 @@ export default function ServiceProcess() {
             {val.arrow && (
               <img
                 src="/image/icon/arrow_downward.svg"
-                alt="Arrow Downward"
+                alt=""
+                width={24}
+                height={24}
                 className={styles.arrow_downward}
               />
             )}

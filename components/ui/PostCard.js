@@ -1,6 +1,7 @@
 import styles from "./PostCard.module.css";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function PostCard({ post }) {
   // 文章卡片：顯示封面、分類與發佈時間
@@ -8,7 +9,13 @@ export default function PostCard({ post }) {
     <Link href={"/blog" + post.postSlug} className={styles.card}>
       <article>
         <div className={styles.img_wrapper}>
-          <img src={post.postMeta.postThumb} alt={post.postMeta.title} />
+          <Image
+            src={post.postMeta.postThumb}
+            alt={post.postMeta.title}
+            width={416}
+            height={234}
+            sizes="(max-width: 992px) calc(100vw - 48px), 416px"
+          />
         </div>
         <div className={styles.content_wrapper}>
           <h3>{post.postMeta.title}</h3>

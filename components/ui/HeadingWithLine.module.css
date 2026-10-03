@@ -4,6 +4,12 @@
   align-items: center;
 }
 
+.heading_wrapper img {
+  display: block;
+  width: 100px;
+  height: 6px;
+}
+
 .heading {
   font-size: var(--l);
   font-weight: var(--bold);
@@ -14,6 +20,10 @@
 }
 
 @media (max-width: 576px) {
+  .heading_wrapper img {
+    width: 56px;
+  }
+
   .heading {
     font-size: var(--s);
     font-weight: var(--bolder);

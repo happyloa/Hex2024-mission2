@@ -9,7 +9,7 @@ export default function Footer() {
       <div className={styles.elements_wrapper}>
         <div className={styles.logo_and_paragraph_and_email}>
           <Link href="/">
-            <img src="/image/logo.svg" alt="網站 Logo" />
+            <img src="/image/logo.svg" alt="網站 Logo" width={120} height={53} loading="lazy" />
           </Link>
           <p>
             若有數位產品設計和開發相關問題
@@ -22,15 +22,15 @@ export default function Footer() {
         </div>
         <div className={styles.links}>
           <Link href="/contact">
-            <img src="/image/icon/list.svg" alt="表單 icon" />
+            <img src="/image/icon/list.svg" alt="" width={56} height={56} loading="lazy" />
             填寫表單
           </Link>
-          <a href="#" target="_blank">
-            <img src="/image/icon/instagram.svg" alt="Instagram 連結" />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/image/icon/instagram.svg" alt="Instagram" width={56} height={56} loading="lazy" />
             hexschool_demo
           </a>
-          <a href="#" target="_blank">
-            <img src="/image/icon/facebook.svg" alt="Facebook 連結" />
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <img src="/image/icon/facebook.svg" alt="Facebook" width={56} height={56} loading="lazy" />
             hexschoolTW
           </a>
         </div>

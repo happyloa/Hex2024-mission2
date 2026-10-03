@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./PostSlider.module.css";
 
 import Carousel from "./CarouselSetting/Carousel";

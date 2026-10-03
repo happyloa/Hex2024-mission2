@@ -37,6 +37,10 @@
   color: var(--primary800);
 }
 
+.nav a {
+  display: block;
+}
+
 .nav ul .active {
   border-bottom: 2px solid var(--primary800);
   color: var(--primary800);

@@ -2,13 +2,6 @@ import "./globals.css";
 import "./scrollBar.css";
 import "./variables.css";
 
-import { Noto_Sans_TC } from "next/font/google";
-
-const notoSansTC = Noto_Sans_TC({
-  subsets: ["latin"],
-  display: "swap",
-});
-
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
@@ -39,10 +32,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="zh-Hant" className={notoSansTC.className}>
+    <html lang="zh-Hant">
       <body>
         <Header />
-        {children}
+        <main id="main-content">{children}</main>
         <Footer />
       </body>
     </html>

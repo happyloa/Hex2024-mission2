@@ -1,6 +1,19 @@
 import { Fragment } from "react";
+import Image from "next/image";
+
+import visionPro from "@/public/image/blog/article-image/vision-pro.webp";
+import oculusRift from "@/public/image/blog/article-image/oculus-rift.webp";
+import htcVive from "@/public/image/blog/article-image/htc-vive.webp";
+import playstationVr from "@/public/image/blog/article-image/playstation-vr.webp";
 
 import styles from "./SinglePost.module.css";
+
+const articleImages = {
+  "/image/blog/article-image/vision-pro.webp": visionPro,
+  "/image/blog/article-image/oculus-rift.webp": oculusRift,
+  "/image/blog/article-image/htc-vive.webp": htcVive,
+  "/image/blog/article-image/playstation-vr.webp": playstationVr,
+};
 
 export default function SinglePost({ post }) {
   // 如果找不到文章就顯示錯誤訊息
@@ -35,7 +48,7 @@ export default function SinglePost({ post }) {
               <div className={styles.images_wrapper}>
                 {post.postImages.map((image, imgIdx) => (
                   <figure key={imgIdx}>
-                    <img src={image.url} alt={image.caption} />
+                    <Image src={articleImages[image.url]} alt={image.caption} sizes="(max-width: 768px) calc(100vw - 48px), 417px" />
                     <figcaption>{image.caption}</figcaption>
                   </figure>
                 ))}

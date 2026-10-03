@@ -48,7 +48,7 @@
 }
 
 .content .skills {
-  color: var(--primary400);
+  color: var(--primary600);
   font-size: var(--xxs);
   font-weight: var(--normal);
 }
@@ -70,9 +70,23 @@
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1154 / 792;
+}
+
+.img_wrapper {
+  width: 60%;
+  flex-shrink: 0;
 }
 
 @media (max-width: 1200px) {
+  .img_wrapper {
+    width: 100%;
+  }
+
+  .img_wrapper img {
+    aspect-ratio: 375 / 285;
+  }
+
   .container {
     flex-direction: column-reverse;
   }

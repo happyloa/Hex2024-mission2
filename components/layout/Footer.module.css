@@ -23,6 +23,7 @@
 
 .logo_and_paragraph_and_email img {
   width: 120px;
+  height: auto;
 }
 
 .logo_and_paragraph_and_email p {
@@ -33,7 +34,7 @@
 }
 
 .logo_and_paragraph_and_email a {
-  color: var(--primary500);
+  color: var(--primary600);
   font-size: var(--xs);
   font-weight: var(--normal);
   transition: all 0.3s ease-in-out;

@@ -2,6 +2,10 @@
   display: none;
 }
 
+.container a {
+  display: block;
+}
+
 @media (max-width: 768px) {
   .container {
     background-color: var(--primary100);

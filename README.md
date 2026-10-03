@@ -22,6 +22,10 @@
 | react / react-dom | 19.3.0 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 
+PostCSS 透過 `overrides` 更新至 `^8.5.28`，修復 Next.js 間接依賴的漏洞。之後升級 Next.js 時，可重新檢查是否仍需保留這個設定。
+
+中文使用裝置內建字型，不需要字型切割腳本；服務流程的 Tourney 字型由 `next/font` 處理。
+
 ## 開發環境設置
 
 建議使用 [VSCode](https://code.visualstudio.com/) 搭配 [ES7+ React/Redux/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 import styles from "./WorkCard.module.css";
 
@@ -21,9 +22,21 @@ export default function WorkCard({
 
   return (
     <>
-      <article className={styles.card} onClick={toggleModal}>
+      <article className={styles.card}>
         <div className={styles.img_wrapper}>
-          <img src={imgSrc} alt={title} />
+          <button
+            type="button"
+            className={styles.open_button}
+            aria-label={`查看${title}作品詳情`}
+            onClick={toggleModal}>
+            <Image
+              src={imgSrc}
+              alt={title}
+              width={636}
+              height={400}
+              sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1320px) calc(50vw - 24px), 636px"
+            />
+          </button>
         </div>
         <div className={`${styles["card_content"]} ${styles["px-16"]}`}>
           <h3>{title}</h3>

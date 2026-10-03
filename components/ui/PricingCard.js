@@ -8,7 +8,7 @@ export default function PricingCard({
   // 定價卡片：顯示服務名稱、價格與示意圖示
   return (
     <li className={styles.pricing_card}>
-      <img src={icon} alt={service} />
+      <img src={icon} alt="" width={56} height={56} loading="lazy" />
       <h3>{service}</h3>
       <hr />
       <h4>{price}</h4>

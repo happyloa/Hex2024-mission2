@@ -11,7 +11,7 @@ export default function ServiceTypes() {
       <HeadingWithLine headingContent="服務項目" isH1 />
       <ul className={styles.card_container}>
         {SERVICE_TYPES.map((val) => (
-          <ServiceCards Icon={val.Icon} Title={val.Title} key={val.Title} />
+          <ServiceCards Icon={val.Icon} Title={val.Title} headingLevel={2} eager key={val.Title} />
         ))}
       </ul>
     </section>

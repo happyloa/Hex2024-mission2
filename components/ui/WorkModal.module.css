@@ -36,7 +36,7 @@
 }
 
 .title p {
-  color: var(--primary500);
+  color: var(--primary600);
   text-align: center;
   font-size: var(--xxs);
   font-weight: var(--normal);
@@ -95,6 +95,7 @@
 .main_content figure img {
   border-radius: 20px;
   width: 100%;
+  height: auto;
   margin-bottom: 24px;
 }
 
@@ -115,6 +116,10 @@
 }
 
 .close_icon {
+  background: none;
+  border: 0;
+  padding: 0;
+  display: flex;
   cursor: pointer;
   width: 32px;
   position: absolute;

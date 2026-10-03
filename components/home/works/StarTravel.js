@@ -1,4 +1,5 @@
 import styles from "./StarTravel.module.css";
+import Image from "next/image";
 
 import CTABtn from "@/components/ui/CTABtn";
 
@@ -8,7 +9,7 @@ export default function StarTravel() {
     <article>
       <div className={styles.container}>
         <div className={styles.work_img}>
-          <img src="/image/home/homepage-work1.webp" alt="星際旅行訂票平台" />
+          <Image src="/image/home/homepage-work1.webp" alt="星際旅行訂票平台" width={714} height={720} sizes="(max-width: 1024px) 295px, (max-width: 1440px) 50vw, 714px" />
         </div>
         <div className={styles.desktop_work_intro_wrapper}>
           <div className={styles.desktop_work_content}>

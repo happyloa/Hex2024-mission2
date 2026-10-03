@@ -30,7 +30,7 @@
 }
 
 .info a {
-  color: var(--primary500);
+  color: var(--primary600);
   display: block;
   font-size: var(--xs);
   font-weight: var(--normal);
@@ -57,7 +57,7 @@
 }
 
 .form {
-  color: var(--primary500);
+  color: var(--primary600);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -125,7 +125,7 @@
   }
 
   .info p {
-    color: var(--primary500);
+    color: var(--primary600);
     text-align: center;
     font-size: var(--xxs);
   }

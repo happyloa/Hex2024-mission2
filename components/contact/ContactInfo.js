@@ -30,6 +30,8 @@ export default function ContactInfo() {
               <input
                 type="text"
                 name="name"
+                aria-label="姓名"
+                autoComplete="name"
                 placeholder="輸入您的姓名"
                 required
               />
@@ -38,6 +40,8 @@ export default function ContactInfo() {
               <input
                 type="email"
                 name="email"
+                aria-label="Email"
+                autoComplete="email"
                 placeholder="輸入您的 Email"
                 required
               />
@@ -45,6 +49,7 @@ export default function ContactInfo() {
             <div className={styles.message_field}>
               <textarea
                 name="message"
+                aria-label="訊息"
                 placeholder="您想傳給我的訊息"
                 rows={8}></textarea>
             </div>

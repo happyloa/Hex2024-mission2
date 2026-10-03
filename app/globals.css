@@ -1,5 +1,7 @@
-/* 引入 Tourney 字體 API */
-@import url("https://fonts.googleapis.com/css2?family=Tourney&display=swap");
+html {
+  font-family: Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui,
+    sans-serif;
+}
 
 *,
 *::before,
@@ -14,6 +16,11 @@
 a {
   color: inherit;
   text-decoration: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary700);
+  outline-offset: 4px;
 }
 
 /* 反白選取時統一黑底白字，確保可讀性一致 */

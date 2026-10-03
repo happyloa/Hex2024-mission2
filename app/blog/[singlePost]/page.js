@@ -5,6 +5,13 @@ import BlogMobileNav from "@/components/blog/BlogMobileNav";
 import BlogSideBar from "@/components/blog/BlogSideBar";
 import RelatedPosts from "@/components/blog/Posts/RelatedPosts";
 import posts from "@/lib/posts.json";
+import { notFound } from "next/navigation";
+
+export function generateStaticParams() {
+  return posts.map((post) => ({ singlePost: post.postSlug.slice(1) }));
+}
+
+export const dynamicParams = false;
 
 export async function generateMetadata({ params }) {
   const { singlePost } = await params;
@@ -24,6 +31,8 @@ export async function generateMetadata({ params }) {
 export default async function SinglePostPage({ params }) {
   const { singlePost } = await params;
   const post = posts.find((p) => p.postSlug === `/${singlePost}`);
+
+  if (!post) notFound();
 
   return (
     <>

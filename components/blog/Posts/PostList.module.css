@@ -20,6 +20,8 @@
 .post_list_card .img_wrapper img {
   border-radius: 8px;
   display: block;
+  width: 100%;
+  height: auto;
   transition: all 0.3s ease-in-out;
 }
 

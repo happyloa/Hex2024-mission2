@@ -1,4 +1,5 @@
 import styles from "./AestheticClinic.module.css";
+import Image from "next/image";
 
 import CTABtn from "@/components/ui/CTABtn";
 
@@ -8,7 +9,7 @@ export default function AestheticClinic() {
     <article>
       <div className={styles.container}>
         <div className={styles.work_img}>
-          <img src="/image/home/homepage-work3.webp" alt="醫美診所官網" />
+          <Image src="/image/home/homepage-work3.webp" alt="醫美診所官網" width={721} height={512} sizes="(max-width: 1024px) 295px, (max-width: 1440px) 50vw, 721px" />
         </div>
         <div className={styles.desktop_work_intro_wrapper}>
           <div className={styles.desktop_work_content}>

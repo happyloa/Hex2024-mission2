@@ -6,9 +6,9 @@ import BlogSideBar from "./BlogSideBar";
 export default function BlogPosts({ activeCategory }) {
   return (
     <section className={styles.container}>
-      <main>
+      <div>
         <PostList activeCategory={activeCategory} />
-      </main>
+      </div>
       <BlogSideBar activeCategory={activeCategory} />
     </section>
   );

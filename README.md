@@ -18,8 +18,8 @@
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.2.9 |
-| react / react-dom | 19.2.7 |
+| next | 16.3.8 |
+| react / react-dom | 19.3.0 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 
 ## 開發環境設置

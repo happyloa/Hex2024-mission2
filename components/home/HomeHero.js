@@ -1,9 +1,25 @@
 import styles from "./HomeHero.module.css";
 import { getImageProps } from "next/image";
 
-const imageOptions = { alt: "Noel 的設計工作空間", loading: "eager", fetchPriority: "high" };
-const { props: desktopImage } = getImageProps({ ...imageOptions, src: "/image/home/hero-lg.webp", width: 1154, height: 792, sizes: "(max-width: 1200px) 100vw, 60vw" });
-const { props: mobileImage } = getImageProps({ ...imageOptions, src: "/image/home/hero-sm.webp", width: 375, height: 285, sizes: "100vw" });
+const imageOptions = {
+  alt: "Noel 的設計工作空間",
+  loading: "eager",
+  fetchPriority: "high",
+};
+const { props: desktopImage } = getImageProps({
+  ...imageOptions,
+  src: "/image/home/hero-lg.webp",
+  width: 1154,
+  height: 792,
+  sizes: "(max-width: 1200px) 100vw, (max-width: 1920px) 70vw, 1154px",
+});
+const { props: mobileImage } = getImageProps({
+  ...imageOptions,
+  src: "/image/home/hero-sm.webp",
+  width: 375,
+  height: 285,
+  sizes: "100vw",
+});
 
 export default function HomeHero() {
   // 首屏介紹區塊，集中展示自我介紹與社群連結

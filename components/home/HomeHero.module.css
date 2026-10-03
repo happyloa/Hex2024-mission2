@@ -74,12 +74,13 @@
 }
 
 .img_wrapper {
-  width: 60%;
-  flex-shrink: 0;
+  flex-basis: 1154px;
+  min-width: 0;
 }
 
 @media (max-width: 1200px) {
   .img_wrapper {
+    flex-basis: auto;
     width: 100%;
   }
 

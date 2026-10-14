@@ -20,11 +20,11 @@
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.3.8 |
-| react / react-dom | 19.3.0 |
+| next | 16.4.0 |
+| react / react-dom | 19.3.1 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 
-PostCSS 透過 `overrides` 更新至 `^8.5.28`，修復 Next.js 間接依賴的漏洞。之後升級 Next.js 時，可重新檢查是否仍需保留這個設定。
+PostCSS 透過 `overrides` 更新至 `^8.5.30`，修復 Next.js 間接依賴的漏洞。之後升級 Next.js 時，可重新檢查是否仍需保留這個設定。
 
 全站使用思源黑體（Noto Sans TC），服務流程使用 Tourney，皆由 `next/font` 在建置時下載並由網站自行提供，不需要額外的字型切割腳本。
 

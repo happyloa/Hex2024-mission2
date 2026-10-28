@@ -20,7 +20,7 @@
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.4.0 |
+| next | 16.4.3 |
 | react / react-dom | 19.3.1 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 
@@ -38,36 +38,30 @@ favicon 使用 Noel 標誌中的 N，採黑底白字，檔案位於 `app/favicon
 
 ## 快速開始
 
-**專案設置（Project setup）**
-
-將專案複製到本地端
+複製專案並安裝套件：
 
 ```sh
 $ git clone https://github.com/happyloa/Hex2024-mission2.git
 ```
-
-套件安裝
 
 ```sh
 $ cd Hex2024-mission2
 $ npm ci
 ```
 
-**執行專案（Start the server）**
+啟動開發伺服器：
 
 ```sh
 $ npm run dev
 ```
 
-在瀏覽器上輸入
+在瀏覽器開啟：
 
 ```
 http://localhost:3000/
 ```
 
-即可在本地端預覽專案
-
-**正式建置與本機預覽**
+正式建置與本機預覽：
 
 ```sh
 $ npm run build
@@ -76,9 +70,7 @@ $ npm start
 
 ## 頁面路徑（Router Link）
 
-位於 `app`
-
-結構說明
+頁面位於 `app`：
 
 ```
 app
@@ -97,9 +89,7 @@ app
 
 ## 元件檔案（Components）
 
-位於 `components`
-
-結構說明
+元件位於 `components`：
 
 ```
 components
@@ -119,9 +109,7 @@ components
 
 ## 靜態檔案
 
-位於 `public/image` 及 `lib`
-
-結構說明
+圖片與資料分別位於 `public/image` 和 `lib`：
 
 ```
 public

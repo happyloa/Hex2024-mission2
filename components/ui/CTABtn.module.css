@@ -1,4 +1,5 @@
 .link {
+  align-items: center;
   align-self: center;
   background-color: var(--black);
   border-radius: 5px;

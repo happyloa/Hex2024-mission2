@@ -60,7 +60,6 @@
   }
 
   .card_wrapper {
-    flex-direction: column;
     row-gap: 48px;
   }
 }

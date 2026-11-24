@@ -12,11 +12,8 @@
 .post_list_card .img_wrapper {
   border: 1px solid var(--primary200);
   border-radius: 8px;
-  flex: none;
-  align-self: flex-start;
   width: 100%;
   max-width: 306px;
-  aspect-ratio: 306 / 220;
   overflow: hidden;
 }
 
@@ -24,8 +21,7 @@
   border-radius: 8px;
   display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
   transition: all 0.3s ease-in-out;
 }
 
@@ -96,11 +92,10 @@
 
   .post_list_card .img_wrapper {
     max-width: 100%;
-    aspect-ratio: auto;
   }
 
   .post_list_card .img_wrapper img {
-    height: auto;
+    width: 100%;
   }
 
   .content_wrapper {

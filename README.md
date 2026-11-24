@@ -20,7 +20,7 @@
 
 | 套件 | 版本 |
 | --- | --- |
-| next | 16.4.3 |
+| next | 16.4.6 |
 | react / react-dom | 19.3.1 |
 | embla-carousel-react / embla-carousel-autoplay | 8.6.0 |
 

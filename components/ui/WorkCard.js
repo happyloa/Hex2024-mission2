@@ -34,7 +34,7 @@ export default function WorkCard({
               alt={title}
               width={636}
               height={400}
-              sizes="(max-width: 768px) calc(100vw - 48px), (max-width: 1320px) calc(50vw - 24px), 636px"
+              sizes="(max-width: 576px) calc(100vw - 24px), (max-width: 768px) calc(100vw - 48px), (max-width: 1320px) calc(50vw - 24px), 636px"
             />
           </button>
         </div>

@@ -25,7 +25,7 @@ export default function PostList({ activeCategory }) {
                   alt={post.postMeta.title}
                   width={416}
                   height={234}
-                  sizes="(max-width: 768px) calc(100vw - 69px), (max-width: 1200px) 60vw, 306px"
+                  sizes="(max-width: 768px) calc(100vw - 69px), (max-width: 1200px) calc(100vw - 354px), 306px"
                   loading={idx === 0 ? "eager" : "lazy"}
                   fetchPriority={idx === 0 ? "high" : "auto"}
                 />

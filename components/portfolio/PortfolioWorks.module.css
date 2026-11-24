@@ -6,15 +6,6 @@
   padding: 120px 12px;
 }
 
-.card_wrapper {
-  width: 100%;
-  max-width: 1296px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 80px 24px;
-}
-
 .pagination {
   display: flex;
   gap: 16px;
@@ -57,9 +48,5 @@
   .container {
     gap: 48px;
     padding: 80px 12px;
-  }
-
-  .card_wrapper {
-    row-gap: 48px;
   }
 }

@@ -1,4 +1,14 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 80px 24px;
+  width: min(100%, 1296px);
+}
+
 .card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   position: relative;
 }
 
@@ -17,31 +27,31 @@
   inset: 0;
 }
 
-.card:focus-within {
+.card:has(.open_button:focus-visible) {
   outline: 2px solid var(--primary700);
   outline-offset: 4px;
 }
 
-.card .img_wrapper {
+.img_wrapper {
   border-radius: 8px;
   overflow: hidden;
   margin-bottom: 16px;
 }
 
-.card .img_wrapper img {
+.img_wrapper img {
   display: block;
   width: 100%;
   height: auto;
-  transition: all 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card:hover .img_wrapper img {
   transform: scale(1.1) rotate(2deg);
 }
 
-/* 工具樣式 */
-.px-16 {
-  padding: 0 16px !important;
+.card_content,
+.card_tags {
+  padding-inline: 16px;
 }
 
 .card_content {
@@ -66,6 +76,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  margin-top: auto;
 }
 
 .card_tags li {
@@ -83,8 +94,14 @@
 }
 
 @media (max-width: 576px) {
-  .px-16 {
-    padding: 0 0 0 16px !important;
+  .grid {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: 48px;
+  }
+
+  .card_content,
+  .card_tags {
+    padding-inline-end: 0;
   }
 
   .card_content {

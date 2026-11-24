@@ -7,11 +7,11 @@
   color: var(--black);
   font-size: var(--xxs);
   font-weight: var(--normal);
-  transition: all 0.3s ease-in-out;
+  transition: font-weight 0.3s ease-in-out;
 }
 
-.list a:hover {
-  font-weight: var(--bold) !important;
+.list a:is(:hover, [aria-current="page"]) {
+  font-weight: var(--bold);
 }
 
 .border {
@@ -19,11 +19,13 @@
   width: 8px;
   height: 8px;
   opacity: 0;
-  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
 }
 
-.list:hover .border {
-  opacity: 1 !important;
+.list:hover .border,
+.list a[aria-current="page"] ~ .border {
+  opacity: 1;
 }
 
 .top-left {

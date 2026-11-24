@@ -30,22 +30,17 @@ export default function NavLists({ onLinkClick }) {
             <Link
               href={item.href}
               aria-current={isActive ? "page" : undefined}
-              style={{ fontWeight: isActive ? 600 : 400 }}
               onClick={onLinkClick}>
               {item.label}
             </Link>
             <span
-              className={`${styles["border"]} ${styles["top-left"]}`}
-              style={{ opacity: isActive ? 1 : 0 }}></span>
+              className={`${styles.border} ${styles["top-left"]}`} />
             <span
-              className={`${styles["border"]} ${styles["top-right"]}`}
-              style={{ opacity: isActive ? 1 : 0 }}></span>
+              className={`${styles.border} ${styles["top-right"]}`} />
             <span
-              className={`${styles["border"]} ${styles["bottom-left"]}`}
-              style={{ opacity: isActive ? 1 : 0 }}></span>
+              className={`${styles.border} ${styles["bottom-left"]}`} />
             <span
-              className={`${styles["border"]} ${styles["bottom-right"]}`}
-              style={{ opacity: isActive ? 1 : 0 }}></span>
+              className={`${styles.border} ${styles["bottom-right"]}`} />
           </li>
         );
       })}

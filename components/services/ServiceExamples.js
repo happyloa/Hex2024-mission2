@@ -2,6 +2,7 @@ import styles from "./ServiceExamples.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 import WorkCard from "../ui/WorkCard";
+import workCardStyles from "../ui/WorkCard.module.css";
 import { SERVICE_EXAMPLE_WORKS } from "@/lib/works";
 
 export default function ServiceExamples() {
@@ -9,7 +10,7 @@ export default function ServiceExamples() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="客戶案例" />
-      <ul className={styles.card_wrapper}>
+      <ul className={workCardStyles.grid}>
         {SERVICE_EXAMPLE_WORKS.map((val) => (
           <li key={val.id}>
             <WorkCard

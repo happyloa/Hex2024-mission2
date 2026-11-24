@@ -1,13 +1,14 @@
 import styles from "./PortfolioWorks.module.css";
 
 import WorkCard from "../ui/WorkCard";
+import workCardStyles from "../ui/WorkCard.module.css";
 import { PORTFOLIO_WORKS } from "@/lib/works";
 
 export default function PortfolioWorks() {
   // 作品集列表：以 WorkCard 呈現多個案例並附上分頁占位
   return (
     <section className={styles.container}>
-      <ul className={styles.card_wrapper}>
+      <ul className={workCardStyles.grid}>
         {PORTFOLIO_WORKS.map((val) => (
           <li key={val.id}>
             <WorkCard

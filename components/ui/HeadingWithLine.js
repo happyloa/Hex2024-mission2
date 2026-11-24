@@ -5,24 +5,19 @@ export default function HeadingWithLine({
   light = false,
   isH1 = false,
 }) {
-  // 根據 light 屬性決定文字顏色
-  const headingStyle = {
-    color: light ? "var(--white)" : "var(--primary700)", // 如果 light 為 true 則文字顏色為白色，否則為原始顏色
-  };
-
   // 根據 isH1 屬性決定使用 <h1> 或 <h2> 標籤
   const HeadingTag = isH1 ? "h1" : "h2";
 
   return (
     <div className={styles.heading_wrapper}>
-      <picture className={styles.srcImage1}>
+      <picture>
         <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-left-sm.webp" width={56} height={6} />
         <img src="/image/deco/title-deco-left-lg.webp" alt="" width={100} height={6} />
       </picture>
-      <HeadingTag className={styles.heading} style={headingStyle}>
+      <HeadingTag className={light ? `${styles.heading} ${styles.light}` : styles.heading}>
         {headingContent}
       </HeadingTag>
-      <picture className={styles.srcImage2}>
+      <picture>
         <source media="(max-width: 576px)" srcSet="/image/deco/title-deco-right-sm.webp" width={56} height={6} />
         <img src="/image/deco/title-deco-right-lg.webp" alt="" width={100} height={6} />
       </picture>

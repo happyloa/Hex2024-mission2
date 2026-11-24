@@ -2,6 +2,7 @@ import styles from "./HomeServiceTypes.module.css";
 
 import HeadingWithLine from "../ui/HeadingWithLine";
 import ServiceCards from "../ui/ServiceCards";
+import serviceCardStyles from "../ui/ServiceCards.module.css";
 import CTABtn from "../ui/CTABtn";
 import { SERVICE_TYPES } from "@/lib/serviceTypes";
 
@@ -10,7 +11,7 @@ export default function HomeServiceTypes() {
   return (
     <section className={styles.container}>
       <HeadingWithLine headingContent="服務項目" />
-      <ul className={styles.servicesCard_container}>
+      <ul className={serviceCardStyles.grid}>
         {SERVICE_TYPES.map((val) => (
           <ServiceCards Icon={val.Icon} Title={val.Title} key={val.Title} />
         ))}

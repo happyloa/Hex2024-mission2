@@ -1,12 +1,15 @@
 .container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 306px);
   gap: 24px;
+  width: min(100%, 1320px);
+  margin-inline: auto;
   padding: 0 12px 120px;
 }
 
 @media (max-width: 768px) {
   .container {
+    grid-template-columns: minmax(0, 1fr);
     padding: 40px 34.5px 80px;
   }
 }

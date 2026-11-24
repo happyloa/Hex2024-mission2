@@ -10,13 +10,6 @@
   padding: 120px 12px;
 }
 
-.servicesCard_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
 .content_wrapper {
   display: flex;
   flex-direction: column;

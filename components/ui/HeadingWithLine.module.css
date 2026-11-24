@@ -11,12 +11,17 @@
 }
 
 .heading {
+  color: var(--primary700);
   font-size: var(--l);
   font-weight: var(--bold);
   text-wrap: nowrap;
   letter-spacing: 0.12em;
   line-height: 38.4px;
   padding: 0 16px;
+}
+
+.light {
+  color: var(--white);
 }
 
 @media (max-width: 576px) {

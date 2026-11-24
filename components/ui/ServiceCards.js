@@ -10,7 +10,7 @@ export default function ServiceCards({
   // 服務卡片：呈現單一服務的圖示與標題
   return (
     <li className={styles.card}>
-      <img src={Icon} className={styles.card_icon} alt="" width={80} height={80} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} />
+      <img src={Icon} alt="" width={80} height={80} loading={eager ? "eager" : "lazy"} fetchPriority={eager ? "high" : "auto"} />
       <HeadingTag className={styles.heading}>{Title}</HeadingTag>
     </li>
   );

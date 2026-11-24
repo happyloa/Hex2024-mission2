@@ -3,14 +3,21 @@
   flex-direction: column;
   align-items: center;
   gap: 80px;
-  padding: 120px 0;
+  padding: 120px 12px;
 }
 
 .pricing_cards_container {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 24px;
+  width: min(100%, 1296px);
+}
+
+@media (max-width: 992px) {
+  .pricing_cards_container {
+    grid-template-columns: minmax(0, 1fr);
+    width: min(100%, 416px);
+  }
 }
 
 @media (max-width: 576px) {

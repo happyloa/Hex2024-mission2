@@ -7,18 +7,15 @@
 }
 
 .faq_wrapper {
-  width: 100%;
-  max-width: 1076px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 24px;
+  width: min(100%, 1076px);
 }
 
 .faq_card {
   border: 1px solid var(--primary300);
   border-radius: 8px;
-  width: 526px;
   padding: 24px;
 }
 
@@ -41,6 +38,10 @@
   .container {
     gap: 40px;
     padding: 80px 20px;
+  }
+
+  .faq_wrapper {
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .faq_card h3 {

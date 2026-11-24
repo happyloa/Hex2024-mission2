@@ -9,6 +9,7 @@
 
 .pricing_card img {
   width: 56px;
+  min-width: 0;
   height: auto;
   margin-right: 8px;
 }
@@ -43,11 +44,10 @@
   margin-bottom: 8px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 1200px) {
   .pricing_card {
     justify-content: space-between;
     padding: 24px;
-    width: 100%;
   }
 
   .pricing_card img {
